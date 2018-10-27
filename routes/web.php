@@ -19,9 +19,9 @@ Route::get('contacto', function () {
 });
  
 Route::resource('carousel','CarouselController');
+Route::resource('contacto','ContactoController');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('contacto','ContactoController');
 

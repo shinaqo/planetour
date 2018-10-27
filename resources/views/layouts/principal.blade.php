@@ -21,6 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
   <link rel="stylesheet" href="css/estilo-card.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/estilo-nav-left.css">
   
 
 </head>
