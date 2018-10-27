@@ -53,3 +53,9 @@ body, html {
   font-family: "Roboto", Sans-serif;
 
 }
+.page-footer{
+  background-color: #000C24!important;
+}
+.row-footer{
+  margin-bottom: 0px !important;
+}

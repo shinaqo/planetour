@@ -1,48 +1,92 @@
   
 
-<footer class="page-footer" style="background-color: #212121">
-    <div class="row">
-      <div class="col l3 m3 s12">
-        <img  data-caption="A picture of a way with a group of trees in a park" width="250" src="empresa/logoBajo.png" class="responsive-img">
+    <div class="parallax-container">
+      <div class="parallax brightness"><img src="http://materializecss.com/images/parallax1.jpg"  style="background-color: #000000;
+opacity: 0.9;"></div>
+  <div class="row">
+    <div class="col s2 m2 l2 xl4"></div>
+    <div class="col s8 m18 l8 xl4">
+        <img  data-caption="A picture of a way with a group of trees in a park" width="250" src="empresa/Logo-Planetour-png_2.png" class="responsive-img " style="margin-left: auto;
+    margin-right: auto;
+    display: block;">
+  </div>
+    <div class="col s2 m2 l2 xl4"></div>
+
+    </div>
+  <div class="row">
+    <div class="col s2 m2 l4 xl4"></div>
+    <div class="col s8 m8 l4 xl4">
+      <ul style="text-align: center;">
+        
+        <img  data-caption="A picture of a way with a group of trees in a park" width="50" src="empresa/instagram(1).png" class="responsive-img">
+        <img  data-caption="A picture of a way with a group of trees in a park" width="50" src="empresa/whatsapp(1).png" class="responsive-img" >
+        <img  data-caption="A picture of a way with a group of trees in a park" width="50" src="empresa/facebook(1).png" class="responsive-img" >
+      </ul>
+  </div>
+    <div class="col s2 m2 l4 xl4"></div>
+
+    </div>
+     <div class="row">
+    <div class="col s2 m2 l4 xl4">
+    </div>
+    <div class="col s8 m8 l4 xl4">
         <h5 class="white-text">Portal de Pagos</h5>
         <a href="https://www.webpay.cl/portalpagodirecto/pages/institucion.jsf?idEstablecimiento=34366941"><img  data-caption="A picture of a way with a group of trees in a park" width="250" src="http://www.planetour.cl/wp-content/uploads/2018/08/webpaycl-300x130.png" class="responsive-img"></a>
-      </div>
-      <div class="col l3 m3 s12" style="text-align: justify;">
-        <h5 class="white-text">Sobre Nosotros</h5>
-        <span>Nuestra empresa cuenta con un sólido liderazgo en la industria, es una importante agencia de viajes que, destaca su gran variedad de servicios relacionados con el turismo, por ofrecer una completa asesoría antes, durante y después del viaje, y por contar con una amplia cobertura de proveedores y profesionales expertos en la materia</span>
-        <ul>
-              <a href="https://www.facebook.com/Planetour-539875436144052/?fref=ts"><img src="empresa/sector14.png" alt=""></a>
-              <a href="#"><img src="empresa/sector15.png" alt=""></a>
-              <a href="#"><img src="empresa/sector16.png" alt=""></a>
-              <a href="https://www.instagram.com/planetourviajes/"><img src="empresa/sector17.png" alt=""></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col l3 m3 s12">
-        <h6 class="white-text">Back-End Tutorials</h6>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Java</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Microsoft .NET</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">PHP/MySQL</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Python</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Ruby on Rails</a></li>
-        </ul>
-      </div>
-      <div class="col l3 m3 s12">
-        <h6 class="white-text">Back-End Tutorials</h6>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Java</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Microsoft .NET</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">PHP/MySQL</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Python</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Ruby on Rails</a></li>
-        </ul>
-      </div>
-    </div>
-  <div class="footer-copyright">
-        <div class="col l6 m6 s12">&copy; 2018 Copyright <a class="white-text text-lighten-4" href="http://www.freetimelearning.com/" target="_blank">Free Time Learn</a></div>
-        
-        <div class="col l6 m6 s12"><a class="grey-text text-lighten-4 right" href="http://www.freetimelearning.com/" target="_blank">Designed By Ian Company</a></div>
+      
+      
   </div>
-</footer>
+    <div class="col s2 m2 l4 xl4"></div>
 
+    </div>
+  
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="images/prueba.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="images/prueba.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="images/prueba.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="images/prueba.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="images/prueba.jpg"></a>
+  </div>
+      
+   
+    </div>
+        
+<!-- <footer class="page-footer" style="background-color: #212121">
+  <div class="row">
+    <div class="col s2 m2 l2 xl4"></div>
+    <div class="col s8 m18 l8 xl4">
+        <img  data-caption="A picture of a way with a group of trees in a park" width="250" src="empresa/Logo-Planetour-png_2.png" class="responsive-img" style="margin-left: auto;
+    margin-right: auto;
+    display: block;">
+  </div>
+    <div class="col s2 m2 l2 xl4"></div>
+
+    </div>
+  <div class="row">
+    <div class="col s2 m2 l4 xl4"></div>
+    <div class="col s8 m8 l4 xl4">
+      <ul style="text-align: center;">
+        
+        <img  data-caption="A picture of a way with a group of trees in a park" width="50" src="empresa/instagram(1).png" class="responsive-img">
+        <img  data-caption="A picture of a way with a group of trees in a park" width="50" src="empresa/whatsapp(1).png" class="responsive-img" >
+        <img  data-caption="A picture of a way with a group of trees in a park" width="50" src="empresa/facebook(1).png" class="responsive-img" >
+      </ul>
+  </div>
+    <div class="col s2 m2 l4 xl4"></div>
+
+    </div>
+  
+        <h5 class="white-text">Portal de Pagos</h5>
+        <a href="https://www.webpay.cl/portalpagodirecto/pages/institucion.jsf?idEstablecimiento=34366941"><img  data-caption="A picture of a way with a group of trees in a park" width="250" src="http://www.planetour.cl/wp-content/uploads/2018/08/webpaycl-300x130.png" class="responsive-img"></a>
+   
+</footer> -->
+<style>
+  .brightness {-webkit-filter: brightness(0.30);filter: brightness(0.30);}
+</style>
+<script>  
+$(document).ready(function(){
+    $('.parallax').parallax();
+  }); 
+$(document).ready(function(){
+    $('.carousel').carousel();
+  });
+       </script>

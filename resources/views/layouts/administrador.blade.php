@@ -71,7 +71,7 @@
 <!-- //////////////////////////////////////////////////////////////////////////// -->
 
 <!-- START MAIN -->
-<div id="main">
+<div id="main-admin">
     <!-- START WRAPPER -->
     <div class="wrapper">
 
