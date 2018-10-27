@@ -1,0 +1,55 @@
+.navegador .nav-wrapper  a{
+    color: #3997fe;
+  }
+
+.navegador{
+  background-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-color: #FF4906;
+} 
+
+.dropdown-content{
+background-color: #FF4906;
+}
+.dropdown-content li>a{
+color: white !important;  
+}
+.carousel-slider{
+  height: 600px;
+}
+.carousel-item{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.titulo-card{
+  text-align: center;
+  color: #FF4906;
+  font-weight: bold;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 25%;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 500px !important;
+}
+.contactarnos{
+  margin: 0em 3em 0em 3em;
+}
+.container .texto{
+  font-size: 18px;
+  font-weight: 500;
+  color: #0079fe;
+}
+body, html {
+  font-family: "Roboto", Sans-serif;
+
+}
