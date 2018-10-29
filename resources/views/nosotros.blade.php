@@ -1,14 +1,38 @@
 @extends('layouts/principal')
 @section('contenido')
 
-<div class="carousel carousel-slider">
+<!-- <div class="carousel carousel-slider">
 	@foreach($data as $row)
 	<a class="carousel-item" href="#one!"><img class="responsive-img" src="images/{{$row->ubicacion_carousel}}"></a>
 	@endforeach
+</div> -->
+<div class="banner-page">
+	<div class="int-banner-page">
+	</div>
+</div>
+
+<div class="myv">
+	<div class="m-q " style="height: 288px;">
+    	<div class="center-mv">
+			<h2 style="font-size: 20px;
+margin: 20px 0;">MISIÓN</h2>
+            <p><em>Lograr ser una de las empresas de viajes líder en el mercado del turismo, brindando un servicio de calidad como ya es costumbre y contar con más sucursales a nivel regional (entre la tercer y cuarta región), logrando satisfacer las necesidades de nuestros clientes, y superar las expectativas de los mismos.</em></p>
+        </div>
+    </div>
+    <div class="v-q " style="height: 288px;">
+    	<div class="center-mv">
+			<h2 style="font-size: 20px;
+margin: 20px 0;">VISIÓN</h2>
+            <p><em>Entregar el mejor servicio personalizado con el fin de lograr la plena satisfacción de todos nuestros clientes, a tráves de la asesoría de primer nivel con profesionales de vasta experiencia en el mundo de los viajes, para que nuestros clientes reciban la mejor coordinación al momento de planificar un viaje ya sea familiar, en parejas o grupos especiales.</em></p>
+        </div>
+    </div>
+    
+    <div class="clear"></div>
+    
 </div>
 
 
-<div class="container">
+<!-- <div class="container">
 	<div class="nosotros">
 		<div class="row">
 
@@ -56,8 +80,7 @@
 		</div>
 	</div>
 </div>
-
-<hr>
+ -->
 <div class="container2-nosotros">
 	<h1 class="titulo-valores">Nuestros Valores</h1>
 	<div class="row">

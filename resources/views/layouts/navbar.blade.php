@@ -31,7 +31,7 @@
     <a href="/" class="brand-logo"><img src="empresa/Logo-Planetour-png_2.png"  alt="" width="50%" height="50%"></a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="/">Inicio</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="nosotros">Nosotros</a></li>
       <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Programa<i class="material-icons right">arrow_drop_down</i></a></li>
       <li><a href="#!">Promocios</a></li>
@@ -41,10 +41,10 @@
     </ul>
   </div>
 </nav>
-
+ 
 
 <ul class="sidenav" id="mobile-demo">
-      <li><a href="/">Inicio</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="nosotros">Nosotros</a></li>
       <li><a class="dropdown-trigger2" href="#!" data-target="dropdown2">Programa<i class="material-icons right">arrow_drop_down</i></a></li>
       <li><a href="#!">Promocios</a></li>

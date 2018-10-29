@@ -43,6 +43,7 @@ color: white !important;
 }
 .contactarnos{
   margin: 0em 3em 0em 3em;
+  text-align: center;
 }
 .container .texto{
   font-size: 18px;
@@ -51,11 +52,156 @@ color: white !important;
 }
 body, html {
   font-family: "Roboto", Sans-serif;
-
+  
 }
 .page-footer{
   background-color: #000C24!important;
 }
 .row-footer{
   margin-bottom: 0px !important;
+}
+.redes:hover{
+   -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/*testando nueva funcionalidad*/
+.int-banner-page {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/images.jpg) center;
+        background-size: auto auto;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+}
+
+.int-banner-page-contacto {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/istanbul2.jpg) bottom center;
+        background-size: auto auto;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+}
+.banner-page::after {
+    content: "";
+    display: block;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/cut-banner.png) center bottom;
+        background-size: auto auto;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+}
+.banner-page {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+.myv {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: url(../images/m-v.jpg) center center;
+        background-size: auto auto;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+}
+
+.m-q {
+    width: 50%;
+    padding: 60px 0;
+    float: left;
+    background: rgba(255, 73, 6,0.8);
+
+}
+
+.v-q {
+    width: 50%;
+    padding: 60px 0;
+    float: left;
+    background: rgba(24, 167, 165,0.8);
+    position: relative;
+}
+
+.center-mv {
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.center-mv h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+.center-mv h2 {
+    display: block;
+    padding: 0 0 15px 0;
+    position: relative;
+}
+.center-mv {
+    color: #fff;
+}
+
+/*.v-q::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 300px 40px;
+    border-color: transparent transparent #51a89b transparent;
+    line-height: 0px;
+    opacity: 0.8;
+    position: absolute;
+    right: 100%;
+    top: 0;
+}*/
+
+
+@media (max-width: 600px) {
+ .v-q::after {
+    display: none;
+}
+}
+
+@media (max-width: 570px) {
+ .v-q::after {
+    display: none;
+}
 }
