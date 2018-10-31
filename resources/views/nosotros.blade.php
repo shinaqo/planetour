@@ -10,7 +10,26 @@
 	<div class="int-banner-page">
 	</div>
 </div>
+<div class="container">
+	<div class="nosotros">
+		<div class="row">
 
+			<div class="col s12 m12 l12 xl12 ">
+				<h3 style="text-align: center;
+				color: #FF4906;
+				font-weight: bold;">BIENVENIDO A PLANETOUR VIAJES</h3>
+				<span style="text-align: center!important;" >
+
+					Nuestra empresa cuenta con un sólido liderazgo en la industria, es una importante agencia de viajes que, destaca su gran variedad de servicios relacionados con el turismo, por ofrecer una completa asesoría antes, durante y después del viaje, y por contar con una amplia cobertura de proveedores y profesionales expertos en la materia.
+				</span>
+				<div style="height: 10px">	</div>
+				<span>	
+					Nuestro equipo está compuesto por profesionales altamente calificados, dedicados a entregar una atención global, segura, confiable y personalizada de nuestros servicios, satisfaciendo las necesidades de nuestros clientes en sus viajes de placer, relajo, negocios y otros.
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="myv">
 	<div class="m-q " style="height: 288px;">
     	<div class="center-mv">
@@ -95,6 +114,80 @@ margin: 20px 0;">VISIÓN</h2>
 	</div>
 </div>
 
+<div class="container">
+	<h1 class="titulo-valores" style="text-align: center;">Nuestros Valores</h1>
+
+	<div class="row">	
+		<div class="col s12 m6 l3 xl3"> 	
+
+	<div class="single-equipo">
+                <div class="circle-people">
+                    <div class="int-circle-people">
+                    	<img src="empresa/people.jpg">
+                    </div>
+                </div>
+                
+                <span class="titulo-people">Fabian el jefe</span>
+                <span class="cargo-people">Gerente general</span>
+                <span class="mail-people"><a href="mailto:jefe@planetour.cl">fabian@planetour.cl</a></span>
+                <span class="tel-people"><a href="tel:+56998745632">+56998745632</a></span>
+            </div>
+		</div>
+
+		<div class="col s12 m6 l3 xl3"> 	
+
+	<div class="single-equipo">
+                <div class="circle-people">
+                    <div class="int-circle-people">
+                    	<img src="empresa/people.jpg">
+                    </div>
+                </div>
+                
+                <span class="titulo-people">Fabian el jefe</span>
+                <span class="cargo-people">Gerente general</span>
+                <span class="mail-people"><a href="mailto:jefe@planetour.cl">fabian@planetour.cl</a></span>
+                <span class="tel-people"><a href="tel:+56998745632">+56998745632</a></span>
+            </div>
+		</div>
+
+		<div class="col s12 m6 l3 xl3"> 	
+
+	<div class="single-equipo">
+                <div class="circle-people">
+                    <div class="int-circle-people">
+                    	<img src="empresa/people.jpg">
+                    </div>
+                </div>
+                
+                <span class="titulo-people">Fabian el jefe</span>
+                <span class="cargo-people">Gerente general</span>
+                <span class="mail-people"><a href="mailto:jefe@planetour.cl">fabian@planetour.cl</a></span>
+                <span class="tel-people"><a href="tel:+56998745632">+56998745632</a></span>
+            </div>
+		</div>
+
+		<div class="col s12 m6 l3 xl3"> 	
+
+	<div class="single-equipo">
+                <div class="circle-people">
+                    <div class="int-circle-people">
+                    	<img src="empresa/people.jpg">
+                    </div>
+                </div>
+                
+                <span class="titulo-people">Fabian el jefe</span>
+                <span class="cargo-people">Gerente general</span>
+                <span class="mail-people"><a href="mailto:jefe@planetour.cl">fabian@planetour.cl</a></span>
+                <span class="tel-people"><a href="tel:+56998745632">+56998745632</a></span>
+            </div>
+		</div>
+
+
+
+	</div>
+
+
+</div>
 <script>
 	$(document).ready(function(){
 

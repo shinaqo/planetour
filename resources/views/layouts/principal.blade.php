@@ -27,6 +27,7 @@
 </head>
 <body  >
 @extends('layouts/footer')
+
  @extends('layouts/navbar')
  
 

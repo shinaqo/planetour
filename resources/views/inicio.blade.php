@@ -41,8 +41,8 @@
           </div>
           <div class="data">
             <div class="content">
-            <span class="author">Jane Doe</span>
-            <h6 class="title"><a href="#">Everything You Need to Know About Gold Medals</a></h6>
+            <span class="author">México</span>
+            <h6 class="title"><a href="#">Cancún caribe mexicano</a></h6>
           </div>
           </div>
         </div>

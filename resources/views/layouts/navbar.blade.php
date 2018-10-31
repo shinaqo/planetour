@@ -26,7 +26,9 @@
   <li class="divider"></li>
   <li><a href="#!">Destinos lejanos</a></li>
 </ul>
-<nav  class="navegador">
+
+<div class="navbar-fixed">
+<nav  class="navegador navbar-fixed">
   <div class="nav-wrapper">
     <a href="/" class="brand-logo"><img src="empresa/Logo-Planetour-png_2.png"  alt="" width="50%" height="50%"></a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -39,9 +41,13 @@
       <li><a href="contacto">Contacto</a></li>
       <li><a href="login"><i class="material-icons">account_circle</i></a></li>
     </ul>
+   <!--  <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+        <span style="color: white!important"> Miércoles 31 de Octubre del 2018 / Valor Dólar: $689 / Valor Dólar Crédito: $699
+</span>
+      </a>   -->
   </div>
 </nav>
- 
+</div>
 
 <ul class="sidenav" id="mobile-demo">
       <li><a href="/">Home</a></li>

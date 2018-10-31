@@ -140,7 +140,7 @@ body, html {
     width: 50%;
     padding: 60px 0;
     float: left;
-    background: rgba(255, 73, 6,0.8);
+    background: rgba(233, 135, 90,0.8);
 
 }
 
@@ -148,7 +148,7 @@ body, html {
     width: 50%;
     padding: 60px 0;
     float: left;
-    background: rgba(24, 167, 165,0.8);
+    background: rgba(72, 174, 172,0.8);
     position: relative;
 }
 
@@ -205,3 +205,324 @@ body, html {
     display: none;
 }
 }
+
+@media (max-width: 472px) {
+.myv{
+height: 700px!important;
+}
+.v-q {
+height: 350px!important;
+}
+.m-q{
+height: 350px!important;  
+}
+}
+
+@media (max-width: 940px) {
+.se-pro{
+  width:300px;
+  height:auto;}
+.form_title{
+  width:300px;
+  height:95px !important;
+  float:none;
+  padding:40px 15px;
+  text-align:center;
+  display:block;}
+.awqsf_box:last-child{
+  height:45px;
+  width:300px;
+  float:none;
+  clear:both;
+  position:initial;}
+#awqsf_submit{
+  width:300px;
+  height:45px;}
+.awqsf_box{
+  width:150px;}
+.content-programas{
+  max-width:300px;}
+.item-programa{
+  float:none;
+  margin:10px auto;
+  width:100%;}
+.m-q{
+  width:100%;
+  float:none;
+  margin:0 auto;}
+.v-q{
+  width:100%;
+  float:none;
+  margin:0 auto;}
+.int-datos{
+  padding:0 20px;}
+.wrap.single{
+  max-width:300px;}
+.the-content .addthis_toolbox{
+  position:initial;}
+.partnerts-int{
+  width:300px;}
+.searchandfilter{
+  width:300px;
+  float:none;}
+.searchandfilter ul li{
+  width:100% !important;
+  padding:10px;
+  float:none;}
+.sf-field-submit{
+  height:50px !important;}
+.sf-field-submit input{
+  height:50px;}
+.item-premium{
+  max-width:300px;
+  margin:20px auto}
+.premium-block-2{
+  width:100% !important;
+  float:none;
+  padding:10px 10px 100px 10px !important;}
+.post-type-archive-premium .cont-se-pro{
+  background:#fff;}
+}
+
+.single-equipo{
+  width:100%;
+  height:auto;
+  padding:25px 0;
+  text-align:center;
+  display:inline-block;
+  vertical-align:top;}
+.single-equipo a{
+  color:#555252;}
+.single-equipo a:hover{
+  color:#FF4906;}
+
+  @media (max-width: 320px) {
+.single-equipo{
+  width:98%;}
+}
+
+.circle-people{
+  width:170px;
+  height:170px;
+  margin:0 auto 30px auto;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  padding:10px;
+  border:solid 1px #e5e5e2;}
+
+  .int-circle-people{
+  width:150px;
+  height:150px;
+  margin:0 auto;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  background:#259282;
+  overflow:hidden;
+  }
+.int-circle-people img{
+  width:100%;
+  min-height:100%;}
+
+  .titulo-people{
+  color:#259282;
+  font-size:18px;
+  display:block;}
+
+  .cargo-people{
+  font-size:14px;
+  display:block;
+  font-weight:300;}
+
+  .mail-people{
+  font-size:14px;
+  display:block;
+  font-weight:300;
+  margin-top:20px;}
+
+
+  .row-contacto{
+  width:100%;
+  margin:0 auto;
+  background: url(images/bg-contacto.jpg) center center no-repeat;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+  overflow:hidden;
+  z-index:1;
+  position:relative;}
+
+
+  .formulario{
+  width:50%;
+  float:left;
+  padding:60px 0 40px 0;}
+.int-formulario{
+  width:98%;
+  margin:0 auto;
+  max-width:420px;
+  text-align:right;}
+
+  .formulario{
+  float:none;
+  margin:0 auto;
+  width:100%;}
+
+  .int-formulario p{
+  margin:0;}
+
+  .int-formulario{
+  position:relative;}
+
+  .datos{
+  width:50%;
+  float:left;
+  padding:60px 0 40px 0;
+  background:rgba(81, 168, 155, 0.8);
+  position:relative;}
+.datos:after{
+  content:"";
+  display:block;
+  position:absolute;
+  right:100%;
+  top:0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 390px 45px;
+  border-color: transparent transparent #51a89b transparent;
+  line-height: 0px;
+  _border-color: #000000 #000000 #51a89b #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+  opacity:0.8;}
+.int-datos{
+  width:98%;
+  max-width:380px;
+  margin:0 auto;
+  color:#fff;
+  font-size:14px;}
+.int-datos h2{
+  padding:0 0 15px 0;
+  margin:0 0 25px 0;
+  display:block;
+  position:relative;
+  color:#fff;
+  }
+.int-datos h2:after{
+  content:"";
+  display:block;
+  width:40px;
+  height:2px;
+  position:absolute;
+  left:0;
+  bottom:0;
+  background:#fff;}
+
+  .datos:after{
+  display:none;}
+
+  .datos{
+  float:none;
+  margin:0 auto;
+  width:100%;}
+
+  .tel{
+  display:block;
+  padding:0 0 0 25px;
+  margin-bottom:20px;
+  position:relative;}
+.mail{
+  display:block;
+  padding:0 0 0 25px;
+  margin-bottom:20px;
+  position:relative;}
+.dir{
+  display:block;
+  padding:0 0 0 25px;
+  position:relative;}
+.tel img, .mail img, .dir img{
+  display:block;
+  position:absolute;
+  left:0;
+  top:2px;}
+
+ input, textarea {
+    color: #555252;
+    background: rgba(255,255,255,0.7);
+}
+
+  .form-50{
+  width:48%;
+  margin:0 1% 15px 1%;
+  float:left;}
+  .contacto{
+    height:  500px!important;
+
+  }
+
+
+.card-contacto{
+  background: rgba(219, 91, 31, 0.8);
+  border-color: #fcf6f6b3;
+
+border-width: 5px;
+
+border-style: solid;
+}
+.input-field > label {
+  color: white;
+}
+ input[type="text"]:not(.browser-default){
+  border-bottom: 1px solid #fff;
+-webkit-box-shadow: 0 1px 0 0 #fff;
+box-shadow: 0 1px 0 0 #fff;
+color: white;
+ border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+input[type="email"]:not(.browser-default){
+  border-bottom: 1px solid #fff;
+-webkit-box-shadow: 0 1px 0 0 #fff;
+box-shadow: 0 1px 0 0 #fff;
+color: white;
+ border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+textarea.materialize-textarea{
+  border-bottom: 1px solid #fff;
+-webkit-box-shadow: 0 1px 0 0 #fff;
+box-shadow: 0 1px 0 0 #fff;
+color: white;
+ border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.btn-floating{
+  border-radius: 0px!important;
+  bottom: -40px!important;
+  width: 800px!important;
+}
+.teal{
+  background-color: #00968800 !important;
+}
+.btn-large ,.btn-floating{
+  -webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
+
+

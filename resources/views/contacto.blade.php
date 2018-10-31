@@ -51,6 +51,73 @@
 
 
 
+
+<div class="myv">
+    <div class="m-q contacto" style="height: 288px;">
+        
+
+        <div class="center-mv">
+              <div class="row" style="padding: 20px">
+    <div class="col s12 m12">
+        <div class="card card-contacto">
+        <div class="card-content">
+         
+  <form id="formularioCrear" method="post" action="/usuario">
+    
+  
+  <div class="row">
+    <div class="input-field col s6">
+      <input value="" id="name" name="name" type="text" class="validate">
+      <label class="active" for="name"><i class="material-icons">account_circle</i>Nombre</label>
+    </div>
+    <div class="input-field col s6">
+      <input value="" id="email" name="email" type="email" class="validate">
+      <label class="active" for="email"><i class="material-icons">mail</i>Mail</label>
+    </div>
+     <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+            <label for="textarea2"><i class="material-icons">message</i>Mensaje</label>
+          </div>
+        </div>
+      
+   
+    
+  <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        
+  </div>
+        
+  </form>
+
+</div>
+      
+  
+        </div>
+       
+    </div>
+  </div>
+        </div>
+    </div>
+    <div class="v-q contacto" style="height: 288px;">
+        <div class="int-datos ">
+            <h2>CONTACTO</h2>
+            <span class="tel">
+                <i class="material-icons">phone</i>
+                Teléfono:  (51) 2 758 956            </span>
+            <span class="mail">
+                <i class="material-icons">email</i>
+                E-mail: contacto@planetour.cl            </span>
+            <span class="dir">
+                <i class="material-icons">location_on</i>
+                Dirección: Portal Amunategui, Amunategui 489, Oficina 409, La Serena Chile.            </span>
+        </div>
+    </div>
+    
+    <div class="clear"></div>
+    
+</div>
 <script>
     $(document).ready(function(){
 
@@ -64,6 +131,8 @@
         setInterval(function(){
             $('.carousel.carousel-slider').carousel('next');
         },6000);
+    $('input#input_text, textarea#textarea2').characterCounter();
+
     });
 
 </script>
