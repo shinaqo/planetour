@@ -512,17 +512,3 @@ color: white;
     border-bottom-left-radius: 20px;
 }
 
-.btn-floating{
-  border-radius: 0px!important;
-  bottom: -40px!important;
-  width: 800px!important;
-}
-.teal{
-  background-color: #00968800 !important;
-}
-.btn-large ,.btn-floating{
-  -webkit-box-shadow: none !important;
-box-shadow: none !important;
-}
-
-
