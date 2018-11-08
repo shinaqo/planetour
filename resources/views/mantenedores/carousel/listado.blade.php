@@ -23,7 +23,7 @@
                 @foreach($data as $row)
                     <tr>
                         <td>{{ $row->id_carousel }}</td>
-                        <td><img src="images/{{$row->ubicacion_carousel}}" alt="" width="50px" height="50px"></td>
+                        <td><img src="images/carousel/{{$row->ubicacion_carousel}}" alt="" width="50px" height="50px"></td>
                         <td>{{ $row->titulo_carousel }}</td>
                         <td>{{ $row->ubicacion_carousel }}</td>
                         <td><a href="{{route('carousel.edit',$row->id_carousel)}}" class="waves-effect waves-light btn amber darken-1"><i class="material-icons">mode_edit</i></a></td>

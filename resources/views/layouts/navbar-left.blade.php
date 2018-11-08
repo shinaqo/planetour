@@ -72,7 +72,9 @@
                 </li>
                 <li class="bold"><a href="carousel" class="waves-effect waves-cyan"><i class="material-icons">dashboard</i> Carousel</a>
                 </li>
-                <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="material-icons">mailbox</i> Mailbox</a>
+                <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="material-icons">mailbox</i>Mailbox</a>
+                </li>
+                <li class="bold"><a href="personal" class="waves-effect waves-cyan"><i class="material-icons">assignment_ind</i>Personal</a>
                 </li>
             </ul>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="material-icons">menu</i></a>

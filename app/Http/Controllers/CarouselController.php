@@ -48,7 +48,7 @@ class CarouselController extends Controller
             $filename = $_FILES["ubicacion_carousel"]["name"][$key]; //Obtenemos el nombre original del archivo
             $source = $_FILES["ubicacion_carousel"]["tmp_name"][$key]; //Obtenemos un nombre temporal del archivo
             
-            $directorio = 'images/'; //Declaramos un  variable con la ruta donde guardaremos los archivos
+            $directorio = 'images/carousel'; //Declaramos un  variable con la ruta donde guardaremos los archivos
             
             //Validamos si la ruta de destino existe, en caso de no existir la creamos
             if(!file_exists($directorio)){
@@ -64,7 +64,7 @@ class CarouselController extends Controller
 
                 try {
                 
-        $carousel= new Carousel();
+        $carousel= new carousel();
         $carousel->titulo_carousel=$titulo;
         $carousel->ubicacion_carousel=$filename;
 
@@ -152,9 +152,9 @@ class CarouselController extends Controller
         try {
             //fala eliminar archivo
             $carousel = Carousel::find($id);
-            $hola=$carousel->ubicacion_carousel;
+            $ubicacion=$carousel->ubicacion_carousel;
 
-            unlink('images/'.$hola);//acá le damos la direccion exacta del archivo
+            unlink('images/carousel/'.$ubicacion);//acá le damos la direccion exacta del archivo
             $carousel->delete();
             return redirect()->route('carousel.index');
         }catch(Exception $e) {
