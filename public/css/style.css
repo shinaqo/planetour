@@ -15,7 +15,7 @@ background-color: #FF4906;
 color: white !important;  
 }
 .carousel-slider{
-  height: 600px;
+  height: 600px!important;
 }
 .carousel-item{
   height: 100%;
@@ -45,7 +45,7 @@ color: white !important;
   margin: 0em 3em 0em 3em;
   text-align: center;
 }
-.container .texto{
+.contactos-iconos .texto{
   font-size: 18px;
   font-weight: 500;
   color: #0079fe;
@@ -454,7 +454,7 @@ height: 350px!important;
   left:0;
   top:2px;}
 
- input, textarea {
+.cont input, textarea {
     color: #555252;
     background: rgba(255,255,255,0.7);
 }
@@ -471,44 +471,45 @@ height: 350px!important;
 
 .card-contacto{
   background: rgba(219, 91, 31, 0.8);
-  border-color: #fcf6f6b3;
+  border-color: #fff;
 
 border-width: 5px;
 
 border-style: solid;
 }
-.input-field > label {
+.cont .input-field > label {
   color: white;
 }
- input[type="text"]:not(.browser-default){
+
+.cont  input[type="text"]:not(.browser-default){
   border-bottom: 1px solid #fff;
 -webkit-box-shadow: 0 1px 0 0 #fff;
 box-shadow: 0 1px 0 0 #fff;
 color: white;
  border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
-input[type="email"]:not(.browser-default){
+.cont input[type="email"]:not(.browser-default){
   border-bottom: 1px solid #fff;
 -webkit-box-shadow: 0 1px 0 0 #fff;
 box-shadow: 0 1px 0 0 #fff;
 color: white;
- border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+ border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
-textarea.materialize-textarea{
+.cont textarea.materialize-textarea{
   border-bottom: 1px solid #fff;
 -webkit-box-shadow: 0 1px 0 0 #fff;
 box-shadow: 0 1px 0 0 #fff;
 color: white;
- border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+ border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 

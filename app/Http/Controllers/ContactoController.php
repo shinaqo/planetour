@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
 use proyecto\Carousel;
+
+use App\Categoria;
+
+use View;
+
 use Exception;
 
 class ContactoController extends Controller
@@ -19,6 +24,12 @@ class ContactoController extends Controller
     {
         $sql="SELECT titulo_carousel,ubicacion_carousel FROM carousel";
         $data = DB::select($sql);
+
+        $sql3="SELECT * FROM categoria WHERE tipo_categoria=0";
+        $categorias = DB::select($sql3);
+
+        View::share ( 'categorias', $categorias );
+        
         return view('contacto', compact('data'));
     }
 

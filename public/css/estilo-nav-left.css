@@ -1,4 +1,10 @@
-
+.collapsible-body{
+  padding: 0px!important;
+  background: #FF4906;
+}
+.collapsible-body a{
+  color: #fff!important;
+}
 
  
   /*revisar estos codigos por posibles conflictos*/
@@ -84,7 +90,7 @@ h1.logo-wrapper{
     
 
   body {
-  background-color: #fcfcfc;
+  background-color: #fff;
 }
 #main-admin,
 #footer-admin {

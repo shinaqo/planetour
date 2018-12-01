@@ -3,7 +3,7 @@
 
 <div class="carousel carousel-slider">
   @foreach($data as $row)
-  <a class="carousel-item" href="#one!"><img class="responsive-img" src="images/{{$row->ubicacion_carousel}}"></a>
+  <a class="carousel-item" href="#one!"><img  class="responsive-img" src="images/carousel/{{$row->ubicacion_carousel}}"></a>
   @endforeach
 </div>
 
@@ -18,18 +18,17 @@
 
   </div>
   
- 
 
 </div>
 <div class="container2">
   <div class="row">
-    
-
-      <div class="col s12 m12 l4 xl4 ">
+   
+@foreach($producto as $row2)
+      <div class="col s12 m12 l6 xl4 ">
 
       <div class="example-1 card-viaje ">
 
-        <div class="wrapper" style="background: url('images/riviera-maya-16.jpg') center/cover no-repeat;">
+        <div class="wrapper" style="background: url('images/portadas/{{$row2->portada_producto}}') center/cover no-repeat;">
           <div class="date">
             <span class="day">12</span>
             <span class="month">Días</span>
@@ -41,13 +40,15 @@
           </div>
           <div class="data">
             <div class="content">
-            <span class="author">México</span>
-            <h6 class="title"><a href="#">Cancún caribe mexicano</a></h6>
+            <span class="author">{{$row2->nombre_pais}}</span>
+            <h6 class="title"><a href="{{route('descripcionproducto.show',$row2->id_producto)}}">Cancún caribe mexicano</a></h6>
           </div>
           </div>
         </div>
       </div>
     </div>
+@endforeach
+
   </div>
 </div>
 <script>

@@ -19,6 +19,8 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+   <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+
   <link rel="stylesheet" href="{!! asset('css/estilo-card.css') !!}">
   <link rel="stylesheet" href="{!! asset('css/style.css') !!}">
   <link rel="stylesheet" href="{!! asset('css/estilo-nav-left.css') !!}">
@@ -34,7 +36,11 @@
 </body>
 <script>
   $(document).ready(function(){
-    $('.slider').slider();
+   $('.slider').slider({ 
+        full_width: false,
+        height : 500, // default - height : 400
+        interval: 6000 // default - interval: 6000
+    });
   });
 
 </script>

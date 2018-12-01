@@ -14,12 +14,23 @@
 Route::get('/', 'PrincipalController@index');
 Route::get('nosotros', 'NosotrosController@index');
 
-Route::get('contacto', function () {
-    return view('contacto');
-});
+// Route::get('promociones', function () {
+//     return view('promociones');
+// });
  
 Route::resource('carousel','CarouselController');
 Route::resource('contacto','ContactoController');
+Route::resource('trabajador','TrabajadorController');
+Route::resource('cargo','CargoController');
+Route::resource('pais','PaisController');
+Route::resource('categoria','CategoriaController');
+Route::resource('user','UserController');
+Route::resource('producto','ProductoController');
+Route::resource('productocarousel','ProductoCarouselController');
+Route::resource('descripcionproducto','DescripcionProductoController');
+Route::resource('destinos','DestinosController');
+Route::resource('promociones','PromocionesController');
+Route::resource('giras','GirasDeEstudioController');
 
 Auth::routes();
 

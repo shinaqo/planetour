@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use planetour\Carousel;
 use Exception;
+use App\Producto;
+use App\Categoria;
+use View;
+
 
 class PrincipalController extends Controller
 {
@@ -19,8 +23,17 @@ class PrincipalController extends Controller
     {
         $sql="SELECT titulo_carousel,ubicacion_carousel FROM carousel";
         $data = DB::select($sql);
-        return view('inicio', compact('data'));
+        $sql2="SELECT id_producto,nombre_producto,precio_producto,descripcion_producto,portada_producto,pais_id_pais,categoria_id_categoria,pais.nombre_pais
+        FROM producto
+        INNER JOIN pais ON pais_id_pais=pais.id_pais";
+        $producto = DB::select($sql2); 
+        $sql3="SELECT * FROM categoria WHERE tipo_categoria=0";
+        $categorias = DB::select($sql3); 
+        View::share ( 'categorias', $categorias );
+        return view('inicio', compact('data','producto'));
     }
+
+
 
     /**
      * Show the form for creating a new resource.

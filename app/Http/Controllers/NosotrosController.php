@@ -5,8 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
-use proyecto\Carousel;
+use App\Trabajador;
+
 use Exception;
+use App\Categoria;
+
+use View;
 
 class NosotrosController extends Controller
 {
@@ -17,8 +21,13 @@ class NosotrosController extends Controller
      */
     public function index()
     {
-        $sql="SELECT titulo_carousel,ubicacion_carousel FROM carousel";
+        $sql="SELECT t.id_trabajador, t.nombre_trabajador, t.apellidoPa_trabajador, t.apellidoMa_trabajador, t.correo, t.numero, t.ubicacion_trabajador, c.nombre_cargo as cargo from trabajador t INNER JOIN cargo c ON t.cargo_id_cargo = c.id_cargo";
         $data = DB::select($sql);
+        $sql3="SELECT * FROM categoria WHERE tipo_categoria=0";
+        $categorias = DB::select($sql3);
+        
+        View::share ( 'categorias', $categorias );
+        
         return view('nosotros', compact('data'));
     }
 

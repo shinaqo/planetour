@@ -19,6 +19,10 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+  <script src='https://devpreview.tiny.cloud/demo/tinymce.min.js'></script>
+
+
+
 
 
   <!-- CORE CSS-->    
@@ -46,6 +50,11 @@
   $('.sidenav').sidenav();
 
   $('.dropdown-trigger').dropdown();
+
+   tinymce.init({
+    selector: '#descripcion_producto'
+  });
+   
 </script>
 </html>
 

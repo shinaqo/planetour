@@ -15,29 +15,29 @@
 
 
 
-<div class="container">
+<div class="contactos-iconos">
     <div class="row">
         <div class="col s12 m12 l12 xl12 ">
             <h3 class="titulo-card">SI NECESITAS CONTACTARNOS
             <br>
         AQUÍ TE DEJAMOS NUESTRA INFORMACIÓN</span>.</h3>
     </div>
-    <div class="col s3 m3 l3 xl3"></div>
-    <div class="col s2 m2 l2 xl2 contactarnos">
+    <div class="col   l3 xl3"></div>
+    <div class="col s12 m12 l2 xl2 contactarnos">
         <img class="responsive-img" src="empresa/ICO001.png" >
         <span class="texto"   style="">+(56)9 564 949 51</span>
         <span class="texto">+(51)2 758 956</span>
     </div>  
-    <div class="col s2 m2 l2 xl2 contactarnos">
+    <div class="col s12 m12 l2 xl2 contactarnos">
         <img class="responsive-img" src="empresa/ICO002.png" >
         <span class="texto"  >contacto@planetour.cl</span>
     </div>  
-    <div class="col s2 m2 l2 xl2 contactarnos">
+    <div class="col s12 m12 l2 xl2 contactarnos">
         <img class="responsive-img" src="empresa/ICO003.png" >
         <span class="texto">  Poratl Amunategui, Amunategui 489, Oficina 409, La Serena, Chile</span>
     </div>  
-    <div class="col s3 m3 l3 xl3"></div>
-    </div>
+    <div class="col   l3 xl3"></div>
+    </div>  
 </div>
 
 
@@ -65,7 +65,7 @@
   <form id="formularioCrear" method="post" action="/usuario">
     
   
-  <div class="row">
+  <div class="row cont">
     <div class="input-field col s6">
       <input value="" id="name" name="name" type="text" class="validate">
       <label class="active" for="name"><i class="material-icons">account_circle</i>Nombre</label>
@@ -83,12 +83,46 @@
       
    
     
-  <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+  <button class="btn waves-effect waves-light right" type="submit" name="action">Enviar
     <i class="material-icons right">send</i>
   </button>
         
   </div>
         
+<!-- 
+         <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services required:</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photo Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div> -->
   </form>
 
 </div>
