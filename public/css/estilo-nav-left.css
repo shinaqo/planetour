@@ -5,6 +5,9 @@
 .collapsible-body a{
   color: #fff!important;
 }
+.cerrar-sesion:hover{
+   color: black!important;
+}
 
  
   /*revisar estos codigos por posibles conflictos*/

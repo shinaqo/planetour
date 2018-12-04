@@ -15,7 +15,12 @@ background-color: #FF4906;
 color: white !important;  
 }
 .carousel-slider{
-  height: 600px!important;
+  /*height: 600px!important;*/
+}
+@media(max-width: 1410px){
+    .carousel-slider{
+  /*height:0!important;*/
+}
 }
 .carousel-item{
   height: 100%;
@@ -207,8 +212,15 @@ body, html {
 }
 
 @media (max-width: 472px) {
-.myv{
+/*.myv{
 height: 700px!important;
+}
+*/
+.control-contacto{
+  padding: 0px!important;
+}
+.center-mv{
+  width: 90%!important;
 }
 .v-q {
 height: 350px!important;

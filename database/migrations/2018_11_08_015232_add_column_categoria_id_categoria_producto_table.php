@@ -14,8 +14,8 @@ class AddColumnCategoriaIdCategoriaProductoTable extends Migration
     public function up()
     {
         Schema::table('producto', function (Blueprint $table) {
-        $table->integer('id_categoria')->unsigned();
-        $table->foreign('id_categoria')->references('id_categoria')->on('categoria');
+        $table->integer('categoria_id_categoria')->unsigned();
+        $table->foreign('categoria_id_categoria')->references('id_categoria')->on('categoria');
         });
     }
 
@@ -28,7 +28,7 @@ class AddColumnCategoriaIdCategoriaProductoTable extends Migration
     {   
         Schema::table('producto', function (Blueprint $table) {
         $table->dropForeign('categoria_id_categoria_foreign');
-         $table->dropColumn('id_categoria');
+         $table->dropColumn('categoria_id_categoria');
         });     
     }
 }

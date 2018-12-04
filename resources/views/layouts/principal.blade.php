@@ -22,18 +22,21 @@
    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
 
   <link rel="stylesheet" href="{!! asset('css/estilo-card.css') !!}">
+  <link rel="stylesheet" href="{!! asset('css/estilo-promo.css') !!}">
+
   <link rel="stylesheet" href="{!! asset('css/style.css') !!}">
   <link rel="stylesheet" href="{!! asset('css/estilo-nav-left.css') !!}">
   
 
 </head>
-<body  >
+<body  id="prueba">
 @extends('layouts/footer')
 
  @extends('layouts/navbar')
  
 
 </body>
+<script src="{!! asset('js/conecta.js') !!}"></script>
 <script>
   $(document).ready(function(){
    $('.slider').slider({ 

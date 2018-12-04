@@ -1,7 +1,8 @@
 @extends('layouts/principal')
 @section('contenido')
 
-<div class="carousel carousel-slider">
+
+<div class="carousel carousel-slider slider">
   @foreach($data as $row)
   <a class="carousel-item" href="#one!"><img  class="responsive-img" src="images/carousel/{{$row->ubicacion_carousel}}"></a>
   @endforeach

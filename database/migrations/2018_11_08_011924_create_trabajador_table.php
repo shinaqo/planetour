@@ -20,6 +20,7 @@ class CreateTrabajadorTable extends Migration
             $table->string('apellidoMa_trabajador');
             $table->string('correo',100);
             $table->integer('numero');
+            $table->string('ubicacion_trabajador');
 
             $table->timestamps();
         });

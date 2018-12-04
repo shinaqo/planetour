@@ -14,8 +14,8 @@ class AddColumnCargoIdCargoTrabajadorTable extends Migration
     public function up()
     {
         Schema::table('trabajador', function (Blueprint $table) {
-        $table->integer('id_cargo')->unsigned();
-        $table->foreign('id_cargo')->references('id_cargo')->on('cargo');
+        $table->integer('cargo_id_cargo')->unsigned();
+        $table->foreign('cargo_id_cargo')->references('id_cargo')->on('cargo');
         });
     }
 
@@ -28,7 +28,7 @@ class AddColumnCargoIdCargoTrabajadorTable extends Migration
     {
          Schema::table('trabajador', function (Blueprint $table) {
         $table->dropForeign('trabajador_id_cargo_foreign');
-         $table->dropColumn('id_cargo');
+         $table->dropColumn('cargo_id_cargo');
         }); 
     }
 }

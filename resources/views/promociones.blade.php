@@ -1,106 +1,22 @@
 @extends('layouts/principal')
 @section('contenido')
 <style>
-.fondo{
-}
-.fondo3 {
-    background-size: 100%;
-    background-repeat: no-repeat;       
-    height: 350px;
-    font-size: 55px;
-    color: #ffffff;
-    text-align: center;
-    font-family: verdana;
-    font-weight: bold;
-}
-.su-spacer {
-    display: block;
-    height: 0;
-    clear: both;
-    overflow: hidden;
-}
-.tituloFondo {
-    margin-top: 70px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-}
+body{
+  background-image: url('images/sunset.jpg')!important;
+  background-attachment: fixed;
 
-.su-button {
-    display: inline-block !important;
-    text-align: center;
-    text-decoration: none !important;
-    -webkit-box-sizing: content-box !important;
-    box-sizing: content-box !important;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-}
-.miBoton {
-    border: none;
-    width: 170px;
-    font-size: 16px;
-}
-a.linkFondo:hover{
-color: #FF4906!important;
-}
-span.cambia:hover{
-color: black!important;
-}
-@media (max-width: 600px) {
- .su-spacer {
- height: 0px!important;
-}
-.linkFondo{
-    font-size: 30px;
-}
-
-}
-@media (max-width: 1400px) {
-.fondo3{
-    background-size: cover; 
-}
-}
-
-.dividerheight10 {
-    height: 10px;
-    width: 100%;
-    float: left;
-}
-.titlesection {
-    text-align: center;
-}
-.titlesection h1 {
-    text-align: center;
-    color: #FF4906;
-    font-size: 47px;
-    font-family: arial;
-    font-weight: bold;
-}
-.bienvenido {
-    font-size: 40px;
-    font-family: arial;
-    font-weight: bold;
-    color: #FF4906;
-    text-align: center;
-    margin-bottom: 25px;
-}
-h1 {
-    color: #5e6d81;
-    font-size: 30px;
-    margin: 0px;
-        margin-bottom: 0px;
-    padding: 0px;
-    font-weight: 600;
 }
 </style>
-    
-<div class="titlesection ">
-<div class="dividerheight10"></div>
-<h1 class="bienvenido">PROMOCIONES EMOCIONANTES</h1>
-<h4 style="color: #5e6d81;">Aprovecha y Viaja ahora mismo</h4>
+
+<div class="titlesection">
+  <div class="dividerheight10"></div>
+  <h1 class="bienvenido">PROMOCIONES EMOCIONANTES</h1>
+  <h4 style="color: #fff;">Aprovecha y Viaja ahora mismo</h4>
 </div>
 
-  @foreach($producto as $row2)
+@foreach($producto as $row2)
 
-<div class="fondo3 z-depth-5" style="margin-bottom: 50px;background-image: url('http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png')">
+<!-- <div class="fondo3 z-depth-5" style="margin-bottom: 50px;background-image: url('http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png')">
     <div class="su-spacer" style="height:50px">
         
     </div>
@@ -122,6 +38,80 @@ h1 {
         </div>
 
     </div>
+  -->
+  <div class="px-2 lg:px-5">
+    <a class="content block mb-5 max-w-2xl mx-auto" href="/blog/laracon-wizards-lawnmowers-hovercrafts">
+      <div class="bg-grey-darker text-white h-screen-1/2 relative rounded lg:rounded-lg hover-lift overflow-hidden" style="background-color: #5b3b86">
+        <img src="http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png" alt="" class="mix-none pin absolute opacity-50 fit h-full w-full">
+        <div class="absolute h-full w-full z-10 flex items-center text-center">
+          <div class="flex-1 p-3">
+            <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">August 11th, 2016</h6>
+            <h2 class="font-heading text-3xl lg:text-4xl font-normal antialiased leading-none m-0">Wizards, Lawnmowers, and Hovercrafts</h2>
 
-@endforeach
-    @stop
+          </div>
+        </div>
+        <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">creativity, Design, Development, and writing</p>
+      </div>
+    </a>
+
+</div>
+
+<div class="px-2 lg:px-5">
+    <a class="content block mb-5 max-w-2xl mx-auto" href="/blog/laracon-wizards-lawnmowers-hovercrafts">
+      <div class="bg-grey-darker text-white h-screen-1/2 relative rounded lg:rounded-lg hover-lift overflow-hidden" style="background-color: #5b3b86">
+        <img src="http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png" alt="" class="mix-none pin absolute opacity-50 fit h-full w-full">
+        <div class="absolute h-full w-full z-10 flex items-center text-center">
+          <div class="flex-1 p-3">
+            <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">August 11th, 2016</h6>
+            <h2 class="font-heading text-3xl lg:text-4xl font-normal antialiased leading-none m-0">Wizards, Lawnmowers, and Hovercrafts</h2>
+
+          </div>
+        </div>
+        <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">creativity, Design, Development, and writing</p>
+      </div>
+    </a>
+
+</div>
+
+<div class="px-2 lg:px-5">
+    <a class="content block mb-5 max-w-2xl mx-auto" href="/blog/laracon-wizards-lawnmowers-hovercrafts">
+      <div class="bg-grey-darker text-white h-screen-1/2 relative rounded lg:rounded-lg hover-lift overflow-hidden" style="background-color: #5b3b86">
+        <img src="http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png" alt="" class="mix-none pin absolute opacity-50 fit h-full w-full">
+        <div class="absolute h-full w-full z-10 flex items-center text-center">
+          <div class="flex-1 p-3">
+            <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">August 11th, 2016</h6>
+            <h2 class="font-heading text-3xl lg:text-4xl font-normal antialiased leading-none m-0">Wizards, Lawnmowers, and Hovercrafts</h2>
+
+          </div>
+        </div>
+        <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">creativity, Design, Development, and writing</p>
+      </div>
+    </a>
+
+</div>
+
+<div class="px-2 lg:px-5">
+    <a class="content block mb-5 max-w-2xl mx-auto" href="/blog/laracon-wizards-lawnmowers-hovercrafts">
+      <div class="bg-grey-darker text-white h-screen-1/2 relative rounded lg:rounded-lg hover-lift overflow-hidden" style="background-color: #5b3b86">
+        <img src="http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png" alt="" class="mix-none pin absolute opacity-50 fit h-full w-full">
+        <div class="absolute h-full w-full z-10 flex items-center text-center">
+          <div class="flex-1 p-3">
+            <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">August 11th, 2016</h6>
+            <h2 class="font-heading text-3xl lg:text-4xl font-normal antialiased leading-none m-0">Wizards, Lawnmowers, and Hovercrafts</h2>
+
+          </div>
+        </div>
+        <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">creativity, Design, Development, and writing</p>
+      </div>
+    </a>
+
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  @endforeach
+
+  @stop

@@ -14,8 +14,8 @@ class AddColumnProductoIdProductoSliderTable extends Migration
     public function up()
     {
         Schema::table('slider', function (Blueprint $table) {
-        $table->integer('id_producto')->unsigned();
-        $table->foreign('id_producto')->references('id_producto')->on('producto');
+        $table->integer('producto_id_producto')->unsigned();
+        $table->foreign('producto_id_producto')->references('id_producto')->on('producto');
         });
     }
 
@@ -28,7 +28,7 @@ class AddColumnProductoIdProductoSliderTable extends Migration
     {
         Schema::table('slider', function (Blueprint $table) {
         $table->dropForeign('producto_id_producto_foreign');
-         $table->dropColumn('id_producto');
+         $table->dropColumn('producto_id_producto');
         });
     }
 }

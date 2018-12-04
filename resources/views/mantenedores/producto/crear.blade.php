@@ -56,7 +56,7 @@
 
 						</div>
 
-						<div class="input-field col s12">
+						<div class="input-field col s12" style="display: none;" id="control_gira">
 							<textarea id="caracteristicasGira_producto" name="caracteristicasGira_producto"></textarea>
 							<label class="active" for="caracteristicasGira_producto">Caracteristicas gira</label>
 						</div>
@@ -88,6 +88,20 @@
 	$(document).ready(function(){
 		$('select').formSelect();
 	});
+
+</script>
+<script>
+	$(document).ready(function() {
+    //Select para mostrar e esconder divs
+    $('#categoria_id_categoria').on('change',function(){
+    	var SelectValue=$(this).val();
+    	if (SelectValue==6) {
+    		document.getElementById('control_gira').style.display='block';
+    	} else {
+    		document.getElementById('control_gira').style.display='none';
+    	}
+    });
+});
 
 </script>
 @endsection

@@ -14,8 +14,8 @@ class AddColumnPaisIdPaisProductoTable extends Migration
     public function up()
     {
         Schema::table('producto', function (Blueprint $table) {
-        $table->integer('id_pais')->unsigned();
-        $table->foreign('id_pais')->references('id_pais')->on('pais');
+        $table->integer('pais_id_pais')->unsigned();
+        $table->foreign('pais_id_pais')->references('id_pais')->on('pais');
         });
     }
 
@@ -28,7 +28,7 @@ class AddColumnPaisIdPaisProductoTable extends Migration
     {
         Schema::table('producto', function (Blueprint $table) {
         $table->dropForeign('producto_id_pais_foreign');
-         $table->dropColumn('id_pais');
+         $table->dropColumn('pais_id_pais');
         });     
     }
 }

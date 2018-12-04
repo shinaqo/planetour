@@ -17,7 +17,10 @@ Route::get('nosotros', 'NosotrosController@index');
 // Route::get('promociones', function () {
 //     return view('promociones');
 // });
- 
+Route::get('prueba', function () {
+    return view('prueba');
+}); 
+
 Route::resource('carousel','CarouselController');
 Route::resource('contacto','ContactoController');
 Route::resource('trabajador','TrabajadorController');

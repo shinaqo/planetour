@@ -18,34 +18,9 @@
     }
 </style>
 
-  <!-- <div class="slider" style="">
-    <ul class="slides">
-      <li>
-        <img src="http://www.planetour.cl/wp-content/uploads/2015/03/476980086_1280x720.jpg" style="background-color: rgb(0, 0, 0); opacity: 1; t"> random image
-        <div class="caption center">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-       <li>
-        <img src="https://www.viajesvina.com/wp-content/uploads/2018/06/slide2-1.jpg" style="background-color: rgb(0, 0, 0); opacity: 1; ;"> random image
-        <div class="caption center">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-       <li>
-        <img src="http://www.planetour.cl/wp-content/uploads/2015/03/476980086_1280x720.jpg" style="background-color: rgb(0, 0, 0); opacity: 1; "> random image
-        <div class="caption center">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div> -->
 
   
-  <div class="carousel carousel-slider">
+  <div class="carousel carousel-slider slider">
     <a class="carousel-item" href="#one!"><img src="images/slide2-1.jpg"></a>
   </div>    
 
@@ -177,7 +152,7 @@ text-transform: uppercase;">¿Donde quieres vivir tu gira?</h4>
     $('.carousel.carousel-slider').carousel({
       fullWidth: true,  
       indicators: false,
-      duration:700
+      duration:700,
       // }).height(500);
     });
 

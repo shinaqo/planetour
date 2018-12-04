@@ -17,7 +17,11 @@ class CreateProductoTable extends Migration
             $table->increments('id_producto');
             $table->string('nombre_producto');
             $table->integer('precio_producto');
-            $table->string('descripcion_producto');
+            $table->string('tipoMoneda_producto');
+            $table->integer('dias_producto');
+            $table->string('descripcion_producto',1500);
+            $table->string('caracteristicasGira_producto',500);
+            $table->string('portada_producto',255);
 
             $table->timestamps();
         });
