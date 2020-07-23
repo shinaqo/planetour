@@ -20,7 +20,7 @@ class GirasDeEstudioController extends Controller
         $sql3="SELECT * FROM categoria WHERE tipo_categoria=0";
         $categorias = DB::select($sql3);
         View::share ( 'categorias', $categorias );
-        $sql="SELECT * FROM producto WHERE categoria_id_categoria=6";
+        $sql="SELECT * FROM producto WHERE categoria_id_categoria=2";
         $producto = DB::select($sql);
 
         return view('giras',compact('producto'));

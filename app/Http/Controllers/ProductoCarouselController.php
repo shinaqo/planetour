@@ -19,9 +19,13 @@ class ProductoCarouselController extends Controller
      */
     public function index()
     {
-        $data=Slider::all();
-        return view('mantenedores/productocarousel/listado', compact('data'));
-    }
+       $sql="SELECT `id_slider`,`carpeta`,`src` ,producto.nombre_producto
+       FROM `slider` 
+       INNER JOIN producto ON producto_id_producto=producto.id_producto";
+       $data = DB::select($sql);
+       
+       return view('mantenedores/productocarousel/listado', compact('data'));
+   }
 
     /**
      * Show the form for creating a new resource.
@@ -49,10 +53,10 @@ class ProductoCarouselController extends Controller
 
         $producto_id_producto=$request->producto_id_producto;
 //Como el elemento es un arreglos utilizamos foreach para extraer todos los valores
-    foreach($_FILES["ubicacion_carousel"]['tmp_name'] as $key => $tmp_name)
-    {
+        foreach($_FILES["ubicacion_carousel"]['tmp_name'] as $key => $tmp_name)
+        {
         //Validamos que el archivo exista
-        if($_FILES["ubicacion_carousel"]["name"][$key]) {
+            if($_FILES["ubicacion_carousel"]["name"][$key]) {
             $filename = $_FILES["ubicacion_carousel"]["name"][$key]; //Obtenemos el nombre original del archivo
             $source = $_FILES["ubicacion_carousel"]["tmp_name"][$key]; //Obtenemos un nombre temporal del archivo
             
@@ -71,30 +75,30 @@ class ProductoCarouselController extends Controller
             if(move_uploaded_file($source, $target_path)) { 
 
                 try {
-                
-        $slider= new Slider();
-        $slider->carpeta=$producto_id_producto;
-        $slider->src=$filename;
-        $slider->producto_id_producto=$producto_id_producto;
+                    
+                    $slider= new Slider();
+                    $slider->carpeta=$producto_id_producto;
+                    $slider->src=$filename;
+                    $slider->producto_id_producto=$producto_id_producto;
 
-            $slider->save();
+                    $slider->save();
 
-        } catch (Exception $e) {
-            return $this->response->errorInternal($e -> getMessage());
-            
-        }
+                } catch (Exception $e) {
+                    return $this->response->errorInternal($e -> getMessage());
+                    
+                }
                 echo "El archivo $filename se ha almacenado en forma exitosa.<br>";
-                } else {    
+            } else {    
                 echo "Ha ocurrido un error, por favor inténtelo de nuevo.<br>";
             }
             closedir($dir); //Cerramos el directorio de destino
         }
     }
-            return redirect()->route('productocarousel.index');
+    return redirect()->route('productocarousel.index');
 
 
 
-    }
+}
 
     /**
      * Display the specified resource.

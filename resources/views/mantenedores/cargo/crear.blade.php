@@ -8,7 +8,7 @@
 		<div class="card">
 			<div class="card-content">
 				<span class="card-title">Crear Cargo para trabajador</span>
-				<form id="formularioCrear" method="post" action="/cargo" enctype="multipart/form-data">
+				<form id="formularioCrear" method="post" action="/cargo" enctype="multipart/form-data" onsubmit="return validar_cargo();">
 					{{ csrf_field() }}
 					<div class="row">
 						<div class="input-field col s4">
@@ -17,20 +17,23 @@
 						</div>
 
 					</div>
-				</form>
 
-			</div>
-			<div class="card-action">
-				<a href="{!! asset('cargo') !!}">Cancelar</a>
-				<a href="javascript:{}" onclick="document.getElementById('formularioCrear').submit();">Crear</a>
-			</div>
+				</div>
+				<div class="card-action">
+					<a href="{!! asset('cargo') !!}">Cancelar</a>
+					<button class="btn waves-effect waves-light deep-orange" type="submit" name="action">Crear
+						<i class="material-icons right">send</i>
+					</button>
+					<!-- <a href="javascript:{}" onclick="document.getElementById('formularioCrear').submit();">Crear</a> -->
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
 
 <script>
-        $(document).ready(function(){
-    $('select').formSelect();
-  });
-      </script>
+	$(document).ready(function(){
+		$('select').formSelect();
+	});
+</script>
 @endsection

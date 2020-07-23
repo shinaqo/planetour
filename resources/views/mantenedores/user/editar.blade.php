@@ -8,7 +8,7 @@
       <div class="card-content">
         <span class="card-title">Editar</span>
         
-        <form id="formularioEditar" method="post" action="/user/{{$data_user->id}}">
+        <form id="formularioEditar" method="post" action="/user/{{$data_user->id}}" onsubmit="return validar_user();">
           <input name="_method" type="hidden" value="PUT">
           
           {{ csrf_field()}}
@@ -30,13 +30,9 @@
              <select id="perfil_id" name="perfil_id">
               @foreach($select_perfil as $row)
               @if($data_user->perfil_id === $row->id)
-              <option value="{{$row->id}}" selected="selected">
-                {{$row->nombre}}
-              </option>
+              <option value="{{$row->id}}" selected="selected">{{$row->nombre}}</option>
               @else
-              <option value="{{$row->id}}">
-                {{$row->nombre}}
-              </option>
+              <option value="{{$row->id}}">{{$row->nombre}}</option>
               @endif
               
               @endforeach
@@ -45,17 +41,18 @@
           </div>
           
         </div>
-        
-      </form>
+      
 
 
-      
-      
-    </div>
-    <div class="card-action">
-      <a href="{!! asset('user') !!}">Cancelar</a>
-      <a href="javascript:{}" onclick="document.getElementById('formularioEditar').submit();">Editar</a>
-    </div>
+      </div>
+      <div class="card-action">
+        <a href="{!! asset('user') !!}">Cancelar</a>
+        <button class="btn waves-effect waves-light deep-orange" type="submit" name="action">Modificar
+          <i class="material-icons right">send</i>
+        </button>
+        <!-- <a href="javascript:{}" onclick="document.getElementById('formularioCrear').submit();">Crear</a> -->
+      </div>
+    </form>
   </div>
 </div>
 </div>

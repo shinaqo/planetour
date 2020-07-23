@@ -26,7 +26,7 @@
 		</div>
 	</div>
 </div>
-<div class="myv">
+<div class="myv2">
 	<div class="m-q " style="height: 288px;">
     	<div class="center-mv">
 			<h2 style="font-size: 20px;
@@ -76,8 +76,8 @@ margin: 20px 0;">VISIÓN</h2>
                 
                 <span class="titulo-people">{{$row->nombre_trabajador}} {{$row->apellidoPa_trabajador}} {{$row->apellidoMa_trabajador}}</span>
                 <span class="cargo-people">{{$row->cargo}}</span>
-                <span class="mail-people"><a href="mailto:jefe@planetour.cl">{{$row->correo}}</a></span>
-                <span class="tel-people"><a href="tel:+56998745632">{{$row->numero}}</a></span>
+                <span class="mail-people"><a href="mailto:{{$row->correo}}l">{{$row->correo}}</a></span>
+                <span class="tel-people"><a href="tel:{{$row->numero}}">{{$row->numero}}</a></span>
             </div>
 		</div>
 

@@ -22,7 +22,7 @@ class PromocionesController extends Controller
         $sql3="SELECT * FROM categoria WHERE tipo_categoria=0";
         $categorias = DB::select($sql3);
         View::share ( 'categorias', $categorias );
-        $sql="SELECT * FROM producto WHERE categoria_id_categoria=5";
+        $sql="SELECT * FROM producto WHERE categoria_id_categoria=1";
         $producto = DB::select($sql);
         return view('promociones',compact('producto'));
     }

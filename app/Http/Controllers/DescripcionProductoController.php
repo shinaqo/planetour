@@ -56,9 +56,10 @@ class DescripcionProductoController extends Controller
         try {
         $producto=Producto::find($id);
 
-         $sql="SELECT carpeta,src,producto.nombre_producto,producto.precio_producto,producto.descripcion_producto,producto.portada_producto
+         $sql="SELECT carpeta,src,producto.nombre_producto,producto.precio_producto,producto.descripcion_producto,producto.importante_producto,producto.portada_producto,id_producto
          FROM slider
-         INNER JOIN producto ON slider.producto_id_producto=producto.id_producto";
+         INNER JOIN producto ON slider.producto_id_producto=producto.id_producto 
+         WHERE id_producto=".$id;
          $data = DB::select($sql);
          $sql3="SELECT * FROM categoria WHERE tipo_categoria=0";
         $categorias = DB::select($sql3);

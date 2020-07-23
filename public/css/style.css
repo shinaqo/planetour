@@ -1,7 +1,48 @@
+.separacion ul li{
+  margin-bottom: .50em;
+}
+.conche ul li{
+  list-style: circle !important;
+}
+.center-item ul{
+  text-align: : center;
+}
+.font-brush {
+    font-family: 'brushstrike';
+    letter-spacing: -1px;
+    text-transform: lowercase;
+}
+.font-x3 {
+    font-size: 300%;
+}
+.font-x4 {
+    font-size: 400%;
+}
+.font-x2, .font-x3 {
+    line-height: 80%;
+}
+
+.footer-contacto a:hover{
+  color:#FF4906!important;
+  transition: 0.5s;
+
+}
+
+.carousel-colaboradores{
+  height: 200px!important;
+}
+
+.indigo-text a:hover{
+  color: #FF4906;
+  transition: 0.3s;
+  
+}
 .navegador .nav-wrapper  a{
     color: #3997fe;
   }
-
+.btn-flat{
+  color : white!important;
+}
 .navegador{
   background-color: #fff;
   border-bottom-style: solid;
@@ -56,7 +97,7 @@ color: white !important;
   color: #0079fe;
 }
 body, html {
-  font-family: "Roboto", Sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
   
 }
 .page-footer{
@@ -65,12 +106,19 @@ body, html {
 .row-footer{
   margin-bottom: 0px !important;
 }
-.redes:hover{
-   -webkit-transform:rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
+.facebook:hover{
+
+  fill: #0079fe
+}
+.redes{
+  transition: 0.5s;
+  fill:#fff;
+}
+.instagram:hover{
+  fill:#d6249f;
+}
+.whatsapp:hover{
+  fill:#1bd741;
 }
 
 /*testando nueva funcionalidad*/
@@ -140,6 +188,19 @@ body, html {
     -o-background-size: cover;
     overflow: hidden;
 }
+.myv2 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: url(../images/lofoten_norway-3840x2160.jpg) center center;
+        background-size: auto auto;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+}
 
 .m-q {
     width: 50%;
@@ -148,7 +209,9 @@ body, html {
     background: rgba(233, 135, 90,0.8);
 
 }
-
+.card-content{
+  padding: 0 24px!important;
+}
 .v-q {
     width: 50%;
     padding: 60px 0;
@@ -306,7 +369,8 @@ height: 350px!important;
 .single-equipo a{
   color:#555252;}
 .single-equipo a:hover{
-  color:#FF4906;}
+  color:#FF4906;
+}
 
   @media (max-width: 320px) {
 .single-equipo{
@@ -475,8 +539,13 @@ height: 350px!important;
   width:48%;
   margin:0 1% 15px 1%;
   float:left;}
+
   .contacto{
     height:  500px!important;
+
+  }
+  .dif{
+    padding: 0px 0!important;
 
   }
 

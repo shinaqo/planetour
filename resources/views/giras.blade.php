@@ -43,9 +43,7 @@ text-transform: uppercase;">¿Donde quieres vivir tu gira?</h4>
     
    
 
-    <?php
-    $a=0;
-    ?>
+    <?php $a=0; ?>
   @foreach($producto as $row2)
     
     @if($a==0)
@@ -70,13 +68,11 @@ text-transform: uppercase;">¿Donde quieres vivir tu gira?</h4>
       </div>
       </div>
       <div class="col s12 l6 offset-l1">
-        <h3 class="indigo-text text-darken-4">{{$row2->nombre_producto}}</h3>
+        <h3 class="indigo-text text-darken-4"><a href="{{route('descripcionproducto.show',$row2->id_producto)}}">{{$row2->nombre_producto}}</a></h3>
         <p>{{$row2->caracteristicasGira_producto}}</p>
       </div>
     </div>
-    <?php
-    $a=1;
-    ?>
+    <?php $a=1; ?>
     @else
     <div class="row">
       <div class="col s12 l4 offset-l1 push-l7">
@@ -99,13 +95,11 @@ text-transform: uppercase;">¿Donde quieres vivir tu gira?</h4>
       </div>
       </div>
       <div class="col s12 l6 offset-l1 pull-l5 right-align">
-        <h3 class="indigo-text text-darken-4">{{$row2->nombre_producto}}</h3>
+        <h3 class="indigo-text text-darken-4"><a href="{{route('descripcionproducto.show',$row2->id_producto)}}">{{$row2->nombre_producto}}</a></h3>
         <p>{{$row2->caracteristicasGira_producto}}</p>
       </div>
     </div>
-    <?php
-    $a=0;
-    ?>
+    <?php $a=0; ?>
     @endif
 
 @endforeach
@@ -114,32 +108,41 @@ text-transform: uppercase;">¿Donde quieres vivir tu gira?</h4>
   </section>
 
 
- <section class="section container scrollspy" id="services">
+ <section class="section container2 scrollspy" id="services">
     <div class="row">
       <div class="col s12 l4">
-        <h2 class="indigo-text text-darken-4">What I do..</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        <h3 class="indigo-text text-darken-4 center">GIRAS DE ESTUDIOS PLANETOUR VIAJES</h3>
+        <p>En Planetour Viajes tenemos una amplia gama de destinos de Giras para que tú y tus compañeros puedan tomar la mejor decisión, y que ese viaje tan esperado, sea una de las mejores experiencias de tú vida.
+Camboriu, Cancún, Punta Cana, Orlando, Sur de Chile y Bariloche, Europa, y mucho más, están esperando por tí.
+Quieres que coordinemos una reunión?, sólo debes comunicarte con nosotros...
+Porque Planetour Viajes, es tú mejor opción en Giras de Estudios.</p>
       </div>
       <div class="col s12 l6 offset-l2">
         <!-- tabs -->
         <ul class="tabs">
-          <li class="tab col s6">
-            <a href="#photography" class="active indigo-text text-darken-4">Photography</a>
+          <li class="tab col s4">
+            <a href="#itinerario" class="active indigo-text text-darken-4">Itinerario</a>
           </li>
-          <li class="tab col s6">
-            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+          <li class="tab col s4">
+            <a href="#actividades" class="indigo-text text-darken-4">Actividades</a>
+          </li>
+           <li class="tab col s4">
+            <a href="#asistencia" class="indigo-text text-darken-4">Asistencia</a>
           </li>
         </ul>
-        <div id="photography" class="col s12">
-            <p class="flow-text indigo-text text-darken-4">Photography</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+
+        <div id="itinerario" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">La mayor Seguridad</p>
+            <p>Trabajamos con Assist Card siendo el mejor seguro de asistencia en viaje, para cada pasajero, destacando que somos los únicos que contamos con Clínica en Bariloche, ante cualquier urgencia presentada, ya sea en las actividades que realicen o estando en el destino, trabajamos además con la Clínica Alemana de Osorno y Valdivia. Nuestra gran preocupación es la seguridad de nuestros clientes, todas las mañanas y noches tenemos rondas médicas en los hoteles y contamos con ambulancia en todas las actividades.</p>
         </div>
-        <div id="editing" class="col s12">
-            <p class="flow-text indigo-text text-darken-4">Editing</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        <div id="actividades" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Las mejores Actividades</p>
+            <p>Contamos con actividades todos los días, para que los estudiantes no tengan tiempos libres, todas las actividades mencionadas en nuestros programas están incluidas, tenemos las mejores actividades al gusto de los estudiantes, entre ellas; Bowling, Cena y Fiesta de Bienvenida en Complejo Los Manantiales en los Saltos del Laja, Fábrica de Chocolate, Onces Alemanas, Subida en Aerosilla, Tobogán Gigante, Fourtrack (motos 4x4), Skate a motor, Arborismo, Tirolesa, Deslizadores acuáticos, Wáter Roller, Paintball, Canopy, Zipline, Extreme Camp (rancho viejo w, juegos de supervivencia), Discotheque Acuática, Catamarán en Valdivia, Cena navegable a bordo del Catamarán y Fiesta de Gala en el mismo Barco, ubicado en Valdivia, Termas de Aguas Calientes en Puyehue, entre otras. Dependiendo del programa a elegir.</p>
+
+        </div>
+         <div id="asistencia" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Unas Fiestas inolvidables</p>
+            <p>Las Discotheques con las cuales nosotros trabajamos son exclusivamente para estudiantes las cuales están certificadas y calificadas por estándares de calidad y seguridad. Contamos con fiestas todas las noches, para mantener a nuestro grupo unido, de esta forma no tienen noches libres.</p>
         </div>
         </div>
       </div>

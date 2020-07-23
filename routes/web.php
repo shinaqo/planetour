@@ -34,8 +34,27 @@ Route::resource('descripcionproducto','DescripcionProductoController');
 Route::resource('destinos','DestinosController');
 Route::resource('promociones','PromocionesController');
 Route::resource('giras','GirasDeEstudioController');
+Route::resource('colaborador','ColaboradorController');
+Route::resource('colaboradores','ColaboradoresController');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// Route::get('sendemail', function () {
+
+//     $data = array(
+//         'name' => "Curso Laravel",
+//     );
+
+//     Mail::send('emails.welcome', $data, function ($message) {
+
+//         $message->from('ian.vinales26@gmail.com', 'Curso Laravel');
+
+//         $message->to('ian.vinales26@gmail.com')->subject('test email Curso Laravel');
+
+//     });
+
+//     return "Tú email ha sido enviado correctamente";
+
+// });

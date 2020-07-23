@@ -14,7 +14,6 @@
                     <th>Imagen</th>
                     <th>Titulo</th>
                     <th>Ubicacion</th>
-                    <th>Editar</th>
                     <th>Eliminar</th>
                 </tr>
             </thead>
@@ -23,10 +22,10 @@
                 @foreach($data as $row)
                     <tr>
                         <td>{{ $row->id_carousel }}</td>
-                        <td><img src="images/carousel/{{$row->ubicacion_carousel}}" alt="" width="50px" height="50px"></td>
+                        <td><img src="images/carousel/{{$row->ubicacion_carousel}}" class="materialboxed" alt="" width="50px" height="50px"></td>
                         <td>{{ $row->titulo_carousel }}</td>
                         <td>{{ $row->ubicacion_carousel }}</td>
-                        <td><a href="{{route('carousel.edit',$row->id_carousel)}}" class="waves-effect waves-light btn amber darken-1"><i class="material-icons">mode_edit</i></a></td>
+                      
                         <td>
                             <form id="eliminar-{{$row->id_carousel}}" action="{{ route('carousel.destroy',$row->id_carousel)}}" method="post">
                                 <input type="hidden" name="_method" value="DELETE">

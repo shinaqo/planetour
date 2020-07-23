@@ -40,72 +40,22 @@ body{
     </div>
   -->
   <div class="px-2 lg:px-5">
-    <a class="content block mb-5 max-w-2xl mx-auto" href="/blog/laracon-wizards-lawnmowers-hovercrafts">
-      <div class="bg-grey-darker text-white h-screen-1/2 relative rounded lg:rounded-lg hover-lift overflow-hidden" style="background-color: #5b3b86">
-        <img src="http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png" alt="" class="mix-none pin absolute opacity-50 fit h-full w-full">
+    <a class="content block mb-5 max-w-2xl mx-auto" href="{{route('descripcionproducto.show',$row2->id_producto)}}">
+      <div class="bg-grey-darker text-white h-screen-1/2 relative rounded lg:rounded-lg hover-lift overflow-hidden" style="">
+        <img src="images/portadas/{{$row2->portada_producto}}" alt="" class="mix-none pin absolute opacity-50 fit h-full w-full">
         <div class="absolute h-full w-full z-10 flex items-center text-center">
           <div class="flex-1 p-3">
-            <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">August 11th, 2016</h6>
-            <h2 class="font-heading text-3xl lg:text-4xl font-normal antialiased leading-none m-0">Wizards, Lawnmowers, and Hovercrafts</h2>
+            <!-- <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">{{$row2->dias_producto}} Dias</h6> -->
+            <h2 class="font-heading text-3xl lg:text-4xl font-normal antialiased leading-none m-0">{{$row2->nombre_producto}}, {{$row2->dias_producto}} Días</h2>
 
           </div>
         </div>
-        <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">creativity, Design, Development, and writing</p>
+        <!-- <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">creativity, Design, Development, and writing</p> -->
       </div>
     </a>
 
 </div>
 
-<div class="px-2 lg:px-5">
-    <a class="content block mb-5 max-w-2xl mx-auto" href="/blog/laracon-wizards-lawnmowers-hovercrafts">
-      <div class="bg-grey-darker text-white h-screen-1/2 relative rounded lg:rounded-lg hover-lift overflow-hidden" style="background-color: #5b3b86">
-        <img src="http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png" alt="" class="mix-none pin absolute opacity-50 fit h-full w-full">
-        <div class="absolute h-full w-full z-10 flex items-center text-center">
-          <div class="flex-1 p-3">
-            <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">August 11th, 2016</h6>
-            <h2 class="font-heading text-3xl lg:text-4xl font-normal antialiased leading-none m-0">Wizards, Lawnmowers, and Hovercrafts</h2>
-
-          </div>
-        </div>
-        <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">creativity, Design, Development, and writing</p>
-      </div>
-    </a>
-
-</div>
-
-<div class="px-2 lg:px-5">
-    <a class="content block mb-5 max-w-2xl mx-auto" href="/blog/laracon-wizards-lawnmowers-hovercrafts">
-      <div class="bg-grey-darker text-white h-screen-1/2 relative rounded lg:rounded-lg hover-lift overflow-hidden" style="background-color: #5b3b86">
-        <img src="http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png" alt="" class="mix-none pin absolute opacity-50 fit h-full w-full">
-        <div class="absolute h-full w-full z-10 flex items-center text-center">
-          <div class="flex-1 p-3">
-            <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">August 11th, 2016</h6>
-            <h2 class="font-heading text-3xl lg:text-4xl font-normal antialiased leading-none m-0">Wizards, Lawnmowers, and Hovercrafts</h2>
-
-          </div>
-        </div>
-        <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">creativity, Design, Development, and writing</p>
-      </div>
-    </a>
-
-</div>
-
-<div class="px-2 lg:px-5">
-    <a class="content block mb-5 max-w-2xl mx-auto" href="/blog/laracon-wizards-lawnmowers-hovercrafts">
-      <div class="bg-grey-darker text-white h-screen-1/2 relative rounded lg:rounded-lg hover-lift overflow-hidden" style="background-color: #5b3b86">
-        <img src="http://www.planetour.cl/wp-content/uploads/2017/10/promo1-min.png" alt="" class="mix-none pin absolute opacity-50 fit h-full w-full">
-        <div class="absolute h-full w-full z-10 flex items-center text-center">
-          <div class="flex-1 p-3">
-            <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">August 11th, 2016</h6>
-            <h2 class="font-heading text-3xl lg:text-4xl font-normal antialiased leading-none m-0">Wizards, Lawnmowers, and Hovercrafts</h2>
-
-          </div>
-        </div>
-        <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">creativity, Design, Development, and writing</p>
-      </div>
-    </a>
-
-</div>
     <br>
     <br>
     <br>

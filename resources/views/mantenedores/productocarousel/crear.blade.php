@@ -14,9 +14,7 @@
           <div class="input-field col s4">
             <select id="producto_id_producto" name="producto_id_producto">
               @foreach($producto as $row)
-              <option value="{{$row->id_producto}}">
-                {{$row->nombre_producto}}
-              </option>
+              <option value="{{$row->id_producto}}">{{$row->nombre_producto}}</option>
               @endforeach
             </select>
             <label>Pais</label>
@@ -35,7 +33,7 @@
 
     </div>
     <div class="card-action">
-      <a href="/carousel">Cancelar</a>
+      <a href="{!! asset('productocarousel') !!}">Cancelar</a>
       <a href="javascript:{}" onclick="document.getElementById('formularioCrear').submit();">Crear</a>
     </div>
   </div>

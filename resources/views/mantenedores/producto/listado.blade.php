@@ -11,6 +11,7 @@
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Imagen</th>
                     <th>Nombre</th>
                     <th>Precio</th>
                     <th>Moneda</th>
@@ -26,6 +27,7 @@
                 @foreach($data as $row)
                     <tr>
                         <td>{{ $row->id_producto }}</td>
+                        <td><img  src="{!! asset('images/portadas/') !!}/{{$row->portada_producto}}" class="materialboxed" alt="" width="50px" height="50px"> </td>
                         <td>{{ $row->nombre_producto }}</td>
                         <td>{{ $row->precio_producto }}</td>
                         <td>{{ $row->tipoMoneda_producto }}</td>

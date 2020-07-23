@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
             'estado' => 'Habilitado',
         ]);  
 
-       DB::table('perfil')->insert([
+        DB::table('perfil')->insert([
             'nombre' => 'Trabajador',
             'estado' => 'Habilitado',
         ]); 
@@ -38,27 +38,85 @@ class DatabaseSeeder extends Seeder
             'nombre_cargo' => 'Diseñador',
         ]);  
 
+         DB::table('cargo')->insert([
+            'nombre_cargo' => 'Informatico',
+        ]);
+
         DB::table('pais')->insert([
             'nombre_pais' => 'Chile',
         ]); 
 
-        DB::table('categoria')->insert([
-            'nombre_categoria' => 'Tour',
+        DB::table('pais')->insert([
+            'nombre_pais' => 'Brazil',
         ]); 
 
-       DB::table('users')->insert([
+        DB::table('pais')->insert([
+            'nombre_pais' => 'Argentina',
+        ]); 
+
+        DB::table('pais')->insert([
+            'nombre_pais' => 'Peru',
+        ]); 
+
+        DB::table('pais')->insert([
+            'nombre_pais' => 'Bolivia',
+        ]); 
+
+        DB::table('pais')->insert([
+            'nombre_pais' => 'Uruguay',
+        ]); 
+
+        DB::table('pais')->insert([
+            'nombre_pais' => 'Paraguay',
+        ]); 
+
+        DB::table('categoria')->insert([
+            'nombre_categoria' => 'Promociones',
+            'tipo_categoria' => '1',
+        ]); 
+
+        DB::table('categoria')->insert([
+            'nombre_categoria' => 'Giras de Estudio',
+            'tipo_categoria' => '2',
+        ]); 
+
+        DB::table('categoria')->insert([
+            'nombre_categoria' => 'Sudamerica',
+            'tipo_categoria' => '0',
+        ]); 
+
+        DB::table('categoria')->insert([
+            'nombre_categoria' => 'Caribe',
+            'tipo_categoria' => '0',
+        ]); 
+
+        DB::table('categoria')->insert([
+            'nombre_categoria' => 'Norte America' ,
+            'tipo_categoria' => '0',
+        ]); 
+
+        DB::table('categoria')->insert([
+            'nombre_categoria' => 'Europa',
+            'tipo_categoria' => '0',
+        ]); 
+
+        DB::table('categoria')->insert([
+            'nombre_categoria' => 'Chile',
+            'tipo_categoria' => '0',
+        ]); 
+
+        DB::table('categoria')->insert([
+            'nombre_categoria' => 'Destinos Lejanos',
+            'tipo_categoria' => '0',
+        ]); 
+
+        DB::table('users')->insert([
             'name' => 'Ian',
-            'email' => 'ian@gmail.com',
+            'email' => 'ian.vinales26@gmail.com',
             'password' => bcrypt('admin'),
             'perfil_id' => ('1'),
         ]);  
 
-       DB::table('users')->insert([
-            'name' => 'titi',
-            'email' => 'titi@gmail.com',
-            'password' => bcrypt('cac'),
-            'perfil_id' => ('2'),
 
-        ]); 
     }
 }

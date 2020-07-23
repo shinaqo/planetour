@@ -23,9 +23,7 @@ class PrincipalController extends Controller
     {
         $sql="SELECT titulo_carousel,ubicacion_carousel FROM carousel";
         $data = DB::select($sql);
-        $sql2="SELECT id_producto,nombre_producto,precio_producto,descripcion_producto,portada_producto,pais_id_pais,categoria_id_categoria,pais.nombre_pais
-        FROM producto
-        INNER JOIN pais ON pais_id_pais=pais.id_pais";
+        $sql2="SELECT id_producto,nombre_producto,precio_producto,descripcion_producto,portada_producto,pais_id_pais,categoria_id_categoria,pais.nombre_pais FROM producto INNER JOIN pais ON pais_id_pais=pais.id_pais where destacado_producto='1' ";
         $producto = DB::select($sql2); 
         $sql3="SELECT * FROM categoria WHERE tipo_categoria=0";
         $categorias = DB::select($sql3); 

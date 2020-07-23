@@ -7,7 +7,7 @@
 		<div class="card">
 			<div class="card-content">
 				<span class="card-title">Crear producto</span>
-				<form id="formularioCrear" method="post" action="/producto" enctype="multipart/form-data">
+				<form id="formularioCrear" method="post" action="/producto" enctype="multipart/form-data" onsubmit="return validar_producto();">
 					{{ csrf_field() }}
 					<div class="row">
 						<div class="input-field col s4">
@@ -33,7 +33,7 @@
 						</div>
 
 						<div class="input-field col s4">
-							<input value="" id="dias_producto" name="dias_producto" type="number" class="validate">
+							<input value="" id="dias_producto" name="dias_producto" type="text" class="validate">
 							<label class="active" for="dias_producto">Dias</label>
 						</div>
 
@@ -62,24 +62,40 @@
 						</div>
 						
 
-						<div class="input-field col s12">
+						<div class="input-field col s6">
 							<input value="" id="portada_producto" name="portada_producto" type="file" class="validate">
 
 							<label class="active" for="portada_producto">Portada</label>
 						</div>
+						<div class="input-field col s4">
+							<select id="" name="destacado_producto">
+								<option value="0">No</option>
+								<option value="1">Si</option>
+							</select>
+							<label>Viaje Destacado</label>
+						</div>
 
 						<div class="input-field col s12">
+							<h5 style="text-align: center;">Programa Producto</h5>
 							<textarea id="descripcion_producto" name="descripcion_producto"></textarea>
 						</div>
 
+						<div class="input-field col s12">
+							<h5 style="text-align: center;">Importante Producto</h5>
+							<textarea id="importante_producto" name="importante_producto"></textarea>
+						</div>
+
 					</div>
-				</form>
 
 			</div>
 			<div class="card-action">
-				<a href="{!! asset('producto') !!}">Cancelar</a>
-				<a href="javascript:{}" onclick="document.getElementById('formularioCrear').submit();">Crear</a>
-			</div>
+					<a href="{!! asset('producto') !!}">Cancelar</a>
+					<button class="btn waves-effect waves-light deep-orange" type="submit" name="action">Crear
+						<i class="material-icons right">send</i>
+					</button>
+					<!-- <a href="javascript:{}" onclick="document.getElementById('formularioCrear').submit();">Crear</a> -->
+				</div>
+				</form>
 		</div>
 	</div>
 </div>
@@ -95,7 +111,7 @@
     //Select para mostrar e esconder divs
     $('#categoria_id_categoria').on('change',function(){
     	var SelectValue=$(this).val();
-    	if (SelectValue==6) {
+    	if (SelectValue==2) {
     		document.getElementById('control_gira').style.display='block';
     	} else {
     		document.getElementById('control_gira').style.display='none';

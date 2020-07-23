@@ -24,8 +24,8 @@ $headers .="Contecnt-type: text/html; charset=UTF-8\r\n";
 $envio =mail('ian.vinales27@gmail.com',$asunto,$contenido,$headers);
 
 if($envio){
-	$miresultado='<h4>el Correo ha sido enviado! Gracias por ponerse en contacto con nostoros</h4>'
+	$miresultado='<h4>el Correo ha sido enviado! Gracias por ponerse en contacto con nostoros</h4>';
 }else{
-	$miresultado='<h4>no se envio el correo.</h4>'
+	$miresultado='<h4>no se envio el correo.</h4>';
 }
 echo $miresultado;

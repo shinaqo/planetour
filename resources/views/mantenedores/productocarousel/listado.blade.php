@@ -11,9 +11,9 @@
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Nombre</th>
                     <th>carpeta</th>
-                    <th>src</th>
-                    <th>Editar</th>
+                    <th>Imagen</th>
                     <th>Eliminar</th>
                 </tr>
             </thead>
@@ -22,9 +22,9 @@
                 @foreach($data as $row)
                     <tr>
                         <td>{{ $row->id_slider }}</td>
+                        <td>{{ $row->nombre_producto }}</td>
                         <td>{{ $row->carpeta }}</td>
-                        <td>{{ $row->src }}</td>
-                        <td><a href="{{route('productocarousel.edit',$row->id_slider)}}" class="waves-effect waves-light btn amber darken-1"><i class="material-icons">mode_edit</i></a></td>
+                        <td><img  src="{!! asset('images/slider') !!}/{{$row->carpeta}}/{{$row->src}}" class="materialboxed" alt="" width="50px" height="50px"> </td>
                         <td>
                             <form id="eliminar-{{$row->id_slider}}" action="{{ route('productocarousel.destroy',$row->id_slider)}}" method="post">
                                 <input type="hidden" name="_method" value="DELETE">

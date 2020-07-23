@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"><!-- el error esta aqui  -->
 
@@ -23,10 +24,12 @@
 
   <link rel="stylesheet" href="{!! asset('css/estilo-card.css') !!}">
   <link rel="stylesheet" href="{!! asset('css/estilo-promo.css') !!}">
+  <link rel="stylesheet" href="{!! asset('css/fonts.css') !!}">
 
   <link rel="stylesheet" href="{!! asset('css/style.css') !!}">
   <link rel="stylesheet" href="{!! asset('css/estilo-nav-left.css') !!}">
   
+<script src="{!! asset('js/validar_user.js') !!}"></script>  
 
 </head>
 <body  id="prueba">

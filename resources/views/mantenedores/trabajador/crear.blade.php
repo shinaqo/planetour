@@ -5,7 +5,6 @@
 
  <?php
  $id= Auth::user()->id;
-echo $id;
  ?>
 
 <h1><?php  ?></h1>
@@ -14,7 +13,7 @@ echo $id;
 		<div class="card">
 			<div class="card-content">
 				<span class="card-title">Crear Trabajador</span>
-				<form id="formularioCrear" method="post" action="/trabajador" enctype="multipart/form-data">
+				<form id="formularioCrear" method="post" action="/trabajador" enctype="multipart/form-data" onsubmit="return validar_trabajador();">
 					{{ csrf_field() }}
 					<div class="row">
 						<div class="input-field col s4">
@@ -45,9 +44,7 @@ echo $id;
 						<div class="input-field col s4">
 							<select id="cargo_id_cargo" name="cargo_id_cargo">
 								@foreach($cargo as $row)
-								<option value="{{$row->id_cargo}}">
-									{{$row->nombre_cargo}}
-								</option>
+								<option value="{{$row->id_cargo}}">{{$row->nombre_cargo}}</option>
 								@endforeach
 							</select>
 							<label>Perfil</label>
@@ -61,13 +58,16 @@ echo $id;
 						</div>
 
 					</div>
-				</form>
 
 			</div>
 			<div class="card-action">
-				<a href="{!! asset('trabajador') !!}">Cancelar</a>
-				<a href="javascript:{}" onclick="document.getElementById('formularioCrear').submit();">Crear</a>
-			</div>
+					<a href="{!! asset('trabajador') !!}">Cancelar</a>
+					<button class="btn waves-effect waves-light deep-orange" type="submit" name="action">Crear
+						<i class="material-icons right">send</i>
+					</button>
+					<!-- <a href="javascript:{}" onclick="document.getElementById('formularioCrear').submit();">Crear</a> -->
+				</div>
+				</form>
 		</div>
 	</div>
 </div>

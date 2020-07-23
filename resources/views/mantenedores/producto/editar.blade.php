@@ -2,13 +2,12 @@
 
 @section('content')
 
-
 <div class="row" style="padding: 20px;">
   <div class="col s12 m12">
     <div class="card">
       <div class="card-content">
         <span class="card-title">Crear producto</span>
-        <form id="formularioEditar" method="post" action="/producto/{{$data_producto->id_producto}}" enctype="multipart/form-data">
+        <form id="formularioEditar" method="post" action="/producto/{{$data_producto->id_producto}}" enctype="multipart/form-data" onsubmit="return validar_producto();">
           <input name="_method" type="hidden" value="PUT">
 
           {{ csrf_field() }}
@@ -30,15 +29,15 @@
           -->
           <div class="input-field col s4">
             <select id="" name="tipoMoneda_producto">
-              @foreach($select_categoria as $categoria)
 
-              @if($data_producto->tipoMoneda_producto === $categoria->tipoMoneda_producto)
-              <option value="{{$data_producto->tipoMoneda_producto}}" selected>{{$categoria->tipoMoneda_producto}}</option>
+              @if($data_producto->tipoMoneda_producto === 'USD')
+              <option value="USD" selected>USD</option>
+              <option value="CLP">CLP</option>
               @else
-              <option value="{{ $data_producto->tipoMoneda_producto }}" >{{ $data_producto->tipoMoneda_producto }}</option> 
+              <option value="CLP" selected>CLP</option>
+              <option value="USD" >USD</option>
               @endif
 
-              @endforeach
             </select>
             <label>Moneda</label>
           </div>
@@ -79,25 +78,46 @@
         </select>
         <label>Categoria</label>
       </div>
-
+      <div class="input-field col s4">
+        <select id="" name="destacado_producto">
+          @if($data_producto->destacado_producto === 0)
+          <option value="0" selected>No</option>
+          <option value="1">Si</option>
+          @else
+          <option value="1" selected>Si</option>
+          <option value="0" >No</option>
+          @endif
+        </select>
+        <label>Viaje Destacado</label>
+      </div>
+      @if($data_producto->categoria_id_categoria === 2)
 
       <div class="input-field col s12">
         <textarea id="caracteristicasGira_producto" name="caracteristicasGira_producto">{{$data_producto->caracteristicasGira_producto}}</textarea>
         <label class="active" for="caracteristicasGira_producto">Caracteristicas gira</label>
       </div>
-
+      @endif
 
       <div class="input-field col s12">
+        <h5 style="text-align: center;">Programa Producto</h5>
         <textarea id="descripcion_producto" name="descripcion_producto">{{$data_producto->descripcion_producto}}</textarea>
       </div>
-    </div>
-  </form>
 
-</div>
-<div class="card-action">
-  <a href="{!! asset('producto') !!}">Cancelar</a>
-  <a href="javascript:{}" onclick="document.getElementById('formularioEditar').submit();">Editar</a>
-</div>
+      <div class="input-field col s12">
+        <h5 style="text-align: center;">Importante Producto</h5>
+        <textarea id="importante_producto" name="importante_producto">{{$data_producto->importante_producto}}</textarea>
+      </div>
+    </div>
+
+  </div>
+  <div class="card-action">
+    <a href="{!! asset('producto') !!}">Cancelar</a>
+    <button class="btn waves-effect waves-light deep-orange" type="submit" name="action">Crear
+      <i class="material-icons right">send</i>
+    </button>
+    <!-- <a href="javascript:{}" onclick="document.getElementById('formularioCrear').submit();">Crear</a> -->
+  </div>
+</form>
 </div>
 </div>
 </div>

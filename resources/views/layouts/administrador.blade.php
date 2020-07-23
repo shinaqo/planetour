@@ -19,7 +19,10 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
-  <script src='https://devpreview.tiny.cloud/demo/tinymce.min.js'></script>
+  <script src='http://cloud.tinymce.com/5-testing/tinymce.min.js'></script>
+
+
+
 
 
 
@@ -32,9 +35,10 @@
   <link rel="stylesheet" href="{!! asset('css/estilo-card.css') !!}">
   <link rel="stylesheet" href="{!! asset('css/style.css') !!}">
   <link rel="stylesheet" href="{!! asset('css/estilo-nav-left.css') !!}">
+  <link rel="stylesheet" href="{!! asset('css/fonts.css') !!}">
 
   
-
+<script src="{!! asset('js/validar_admin.js') !!}"></script>  
   
   <style>
   header, main, footer {
@@ -58,7 +62,7 @@
         <div class="row">
           <div class="col s12">
             <a href="#" data-target="sidenav-1" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
-            <a href="home" class="brand-logo"><img src="{!! asset('empresa') !!}/Logo-Planetour-png_2.png"  alt="" width="50%" height="50%"></a>
+            <a href="{!! asset('home') !!}" class="brand-logo"><img src="{!! asset('empresa') !!}/Logo-Planetour-png_.png"  alt="" width="50%" height="50%"></a>
 
             <!-- <a href="#" data-target="sidenav-2" class="right sidenav-trigger show-on-medium-and-up"><i class="material-icons">menu</i></a> -->
           </div>
@@ -76,7 +80,7 @@
     <div class="background">
       <img src="http://materializecss.com/images/office.jpg">
     </div>
-    <a href="#!user"><img class="circle" src="http://materializecss.com/images/yuna.jpg"></a>
+    <a href="#!user"><img class="circle" src="{!! asset('images/trabajador') !!}/1542414158avatar-7.png"></a>
     <a href="#!name"><span class="white-text name">(Administrador)</span></a>
 
     <a href="#!email"><span class="white-text email">{{Auth::user()->email}}</span></a>
@@ -95,6 +99,7 @@
 <li class="bold"><a href="{!! asset('cargo') !!}" class="waves-effect waves-cyan"><i class="material-icons">playlist_add</i>Cargo</a></li>
 <li class="bold"><a href="{!! asset('pais') !!}" class="waves-effect waves-cyan"><i class="material-icons">public</i>País</a></li>
 <li class="bold"><a href="{!! asset('categoria') !!}" class="waves-effect waves-cyan"><i class="material-icons">category</i>Categoria</a></li>
+<li class="bold"><a href="{!! asset('colaborador') !!}" class="waves-effect waves-cyan"><i class="material-icons">forum</i>Colaborador</a></li>
 <li class="bold"><a href="{!! asset('user') !!}" class="waves-effect waves-cyan"><i class="material-icons">person_add</i>Usuario</a></li>
 
 <ul class="collapsible">
@@ -168,7 +173,26 @@
   $('.dropdown-trigger').dropdown();
 
   tinymce.init({
-    selector: '#descripcion_producto'
+    selector: '#descripcion_producto',
+   plugins:'newdocument, bold, italic, underline, strikethrough, alignleft, aligncenter, alignright, alignjustify, styleselect, formatselect, fontselect, fontsizeselect, cut, copy, paste, bullist, numlist, outdent, indent, blockquote, undo, redo, removeformat, subscript, superscript table textcolor lists' ,
+    table_default_attributes: {
+    'class': 'striped',
+  },
+  toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | table | fontsizeselect forecolor backcolor"
+  });
+
+  tinymce.init({
+    selector: '#importante_producto',
+    plugins:'newdocument, bold, italic, underline, strikethrough, alignleft, aligncenter, alignright, alignjustify, styleselect, formatselect, fontselect, fontsizeselect, cut, copy, paste, bullist, numlist, outdent, indent, blockquote, undo, redo, removeformat, subscript, superscript table textcolor lists' ,
+    table_default_attributes: {
+    'class': 'striped',
+  },
+  toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | table | fontsizeselect forecolor backcolor  "
+
+  });
+
+    $(document).ready(function(){
+    $('.materialboxed').materialbox();
   });
 
 </script>

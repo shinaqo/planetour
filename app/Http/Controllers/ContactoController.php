@@ -12,6 +12,7 @@ use App\Categoria;
 use View;
 
 use Exception;
+use Illuminate\Support\Facades\Mail;
 
 class ContactoController extends Controller
 {
@@ -51,7 +52,22 @@ class ContactoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $name=$request->name;
+        $email=$request->email;
+        $mensaje=$request->mensaje;
+
+        $data = array(
+        'name' => $name,'email' => $email, 'mensaje' => $mensaje
+    );
+
+      Mail::send('emails.welcome', $data, function ($message) {
+
+        $message->from('ian.vinales26@gmail.com', 'Contacto Planetour');
+
+        $message->to('ian.vinales26@gmail.com')->subject('Mensaje de Planetour');
+
+    });
+      return redirect('/contacto')-> with('status', 'El mensaje ya fue enviado, Gracias por contactarnos');
     }
 
     /**

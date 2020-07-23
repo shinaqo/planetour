@@ -42,7 +42,7 @@
           <div class="data">
             <div class="content">
             <span class="author">{{$row2->nombre_pais}}</span>
-            <h6 class="title"><a href="{{route('descripcionproducto.show',$row2->id_producto)}}">Cancún caribe mexicano</a></h6>
+            <h6 class="title"><a href="{{route('descripcionproducto.show',$row2->id_producto)}}">{{$row2->nombre_producto}}</a></h6>
           </div>
           </div>
         </div>

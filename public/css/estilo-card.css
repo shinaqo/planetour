@@ -1,6 +1,3 @@
-
-  .example-1 .wrapper {
-  }
   .example-1 .date {
     position: absolute;
     top: 0;
@@ -31,6 +28,11 @@
   }
   .example-1 .title a {
     color: gray;
+  }
+  .title a:hover{
+color:#FF4906;
+  transition: 0.3s;
+
   }
   .example-1 .menu-button {
     position: absolute;

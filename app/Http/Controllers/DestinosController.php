@@ -49,17 +49,19 @@ class DestinosController extends Controller
      */
     public function show($id)
     {
-        $sql="SELECT id_producto,nombre_producto,precio_producto,descripcion_producto,portada_producto,pais_id_pais,categoria_id_categoria,categoria.nombre_categoria
-FROM `producto` 
-INNER JOIN categoria ON categoria_id_categoria=categoria.id_categoria
-WHERE `pais_id_pais`=$id";
+        $sql="SELECT id_producto,nombre_producto,precio_producto,tipoMoneda_producto,dias_producto,descripcion_producto,portada_producto,pais.nombre_pais,categoria_id_categoria,categoria.nombre_categoria
+        FROM `producto` 
+        INNER JOIN categoria ON categoria_id_categoria=categoria.id_categoria
+        INNER JOIN pais ON pais_id_pais=pais.id_pais
+        WHERE categoria_id_categoria=$id";
         $data = DB::select($sql);
-         $sql3="SELECT * FROM categoria WHERE tipo_categoria=0";
+        $sql3="SELECT * FROM categoria WHERE tipo_categoria=0";
         $categorias = DB::select($sql3);
 
+        $sql2="SELECT nombre_categoria from categoria WHERE id_categoria=$id";
+        $data2=DB::select($sql2);
         View::share ( 'categorias', $categorias );
-
-        return view('layouts/destinos', compact('data'));
+        return view('layouts/destinos', compact('data','data2'));
         
     }
 
